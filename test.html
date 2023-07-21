@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NadirCSS</title>
+
+    <link rel="stylesheet" href="nadir.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body class="body-font-noto" style="align-items: center; display: flex; flex-direction: column; gap: 2.5rem; height: 1000vh;">
+    <button><span class="material-symbols-rounded">add_circle</span>Button</button>
+    
+    <div class="row">
+        <button class="material-symbols-rounded">edit</button>
+        <label>Icon Button</label>
+    </div>
+
+    <div class="segmented-button">
+        <button onclick="changeFont('cantarell')" id="demo-font-cantarell">Cantarell</button>
+        <button class="segmented-button-active" onclick="changeFont('noto')" id="demo-font-noto">Noto Sans</button>
+        <button onclick="changeFont('roboto')" id="demo-font-roboto">Roboto</button>
+    </div>
+
+    <div class="row">
+        <div class="card">Card</div>
+        <div class="card-error">Error Card</div>
+        <div class="card-success">Success Card</div>
+        <div class="card-warning">Warning Card</div>
+    </div>
+
+    <div class="checkbox-column">
+        <div class="row">
+            <div class="checkbox-selected material-symbols-rounded">check</div>
+            <label>Selected Checkbox</label>
+        </div>
+
+        <div class="row">
+            <div class="checkbox-unselected material-symbols-rounded">done</div>
+            <label>Unselected Checkbox</label>
+        </div>
+
+        <div class="row">
+            <div class="checkbox-indeterminate material-symbols-rounded">check_indeterminate_small</div>
+            <label>Indeterminate Checkbox</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div onclick="chip('chip')" id="demo-chip" class="chip">Chip</div>
+        <div onclick="chip('chip-input')" id="demo-chip-input" class="chip-input">Input Chip</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <script src="demo-script.js"></script>
+</body>
+</html>

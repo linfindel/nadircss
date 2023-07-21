@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Cantarell";
+    src: url("Cantarell.otf");
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 24rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.body-font-cantarell * {
+    font-family: "Cantarell";
+    font-weight: 300;
+}
+
+.body-font-noto * {
+    font-family: "Noto Sans";
+    font-weight: 200;
+}
+
+.body-font-roboto * {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+* {
+    color: white;
+    text-decoration: none;
+
+    transition: 0.25s ease;
+}
+
+button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border: none;
+    border-radius: 24rem;
+
+    cursor: pointer;
+
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+body {
+    background-color: black;
+}
+
+.card {
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 24px;
+
+    padding: 2.5rem;
+}
+
+.card-error {
+    background-color: rgba(255, 0, 0, 0.25);
+
+    border-radius: 24px;
+
+    padding: 2.5rem;
+}
+
+.card-success {
+    background-color: rgba(0, 255, 0, 0.25);
+
+    border-radius: 24px;
+
+    padding: 2.5rem;
+}
+
+.card-warning {
+    background-color: rgba(255, 255, 0, 0.25);
+
+    border-radius: 24px;
+
+    padding: 2.5rem;
+}
+
+.checkbox-column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.checkbox-column * {
+    max-width: 50%;
+}
+
+.checkbox-indeterminate {
+    background-color: rgba(255, 255, 0, 0.25);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    padding: 1rem;
+}
+
+.checkbox-indeterminate:hover {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.checkbox-selected {
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    padding: 1rem;
+}
+
+.checkbox-selected:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+.checkbox-unselected {
+    background-color: rgba(25, 25, 25, 1);
+
+    border-radius: 5px;
+
+    color: transparent;
+
+    cursor: pointer;
+
+    padding: 1rem;
+}
+
+.checkbox-unselected:hover {
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.chip {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 24rem;
+
+    cursor: pointer;
+
+    padding: 1rem;
+}
+
+.chip:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+.chip-input {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 24rem;
+
+    cursor: pointer;
+
+    padding: 1rem;
+}
+
+.chip-input:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+.column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.divider {
+    background-image: linear-gradient(90deg, transparent, rgba(0, 89, 255, 0.6), rgba(0, 89, 255, 0.5), rgba(0, 89, 255, 0.6), transparent);
+
+    width: 75vw;
+    height: 0.05rem;
+}
+
+.material-symbols-rounded {
+    user-select: none;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.segmented-button {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: center;
+
+    border-radius: 24rem;
+
+    overflow: hidden;
+}
+
+.segmented-button-active {
+    background-color: #0059ff;
+}
+
+.segmented-button button {
+    border-radius: 0;
+}
