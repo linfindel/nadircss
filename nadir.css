@@ -71,7 +71,7 @@ button {
     border: none;
     border-radius: 24rem;
 
-    cursor: pointer;
+    cursor: url('Cursors/link-select.cur');
 
     padding: 1rem;
 }
@@ -89,6 +89,10 @@ body {
     background-color: black;
 }
 
+html {
+    cursor: url("Cursors/normal-select.cur"), auto;
+}
+
 input[type="text"]:not(.input-error, .input-success) {
     background-color: rgba(0, 89, 255, 0.25);
 }
@@ -96,6 +100,8 @@ input[type="text"]:not(.input-error, .input-success) {
 input[type="text"] {
     border: none;
     border-radius: 24px;
+
+    cursor: url('Cursors/text-select.cur'), auto;
 
     font-weight: 300;
 
