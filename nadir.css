@@ -5,6 +5,20 @@
     src: url("Cantarell.otf");
 }
 
+@keyframes nova {
+    0% {
+        box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+    }
+  
+    50% {
+        box-shadow: 0px 0px 0.000001px 20px rgba(0, 89, 255, 0.2), 0px 0px 500px 10px #0059ff;
+    }
+  
+    100% {
+        box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+    }
+}
+
 ::-webkit-scrollbar {
     width: 1rem;
 }
@@ -255,6 +269,18 @@ input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:n
     height: 0.05rem;
 }
 
+.logo-nova {
+    animation: 2.5s nova infinite;
+
+    background-color: black;
+
+    border: 2px solid #0059ff;
+    border-radius: 100%;
+
+    width: 7.5vw;
+    height: 7.5vw;
+}
+
 .material-symbols-rounded {
     user-select: none;
 }
@@ -266,6 +292,7 @@ input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:n
     justify-content: space-around;
 
     backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     background-color: rgba(0, 89, 255, 0.25);
 
     border-radius: 24px;
