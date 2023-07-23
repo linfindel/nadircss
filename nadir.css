@@ -235,6 +235,23 @@ input[type="text"]:hover, input[type="text"]:focus {
     user-select: none;
 }
 
+.navbar {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    backdrop-filter: blur(25px);
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 24px;
+
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+}
+
 .outline-none {
     outline: none;
 }
