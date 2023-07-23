@@ -67,6 +67,11 @@ button:hover {
 }
 
 body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    
     background-color: black;
 }
 
