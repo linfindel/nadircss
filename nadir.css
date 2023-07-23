@@ -83,6 +83,8 @@ input[type="text"] {
     border: none;
     border-radius: 24px;
 
+    font-weight: 300;
+
     padding: 1rem;
 }
 
@@ -100,6 +102,10 @@ input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:n
 
 .input-success {
     background-color: rgba(0, 255, 0, 0.25);
+}
+
+.input-success::placeholder {
+    color: rgb(25, 25, 25);
 }
 
 .input-success:hover, .input-success:focus {
