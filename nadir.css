@@ -281,6 +281,15 @@ input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:n
     height: 7.5vw;
 }
 
+.logo-words {
+    background-image: linear-gradient(to right, rgb(67, 206, 162), rgb(24, 90, 157));
+
+    border-radius: 10px;
+
+    width: 15vw;
+    height: 15vh;
+}
+
 .material-symbols-rounded {
     user-select: none;
 }
