@@ -121,13 +121,12 @@ html {
     cursor: url("Cursors/normal-select.cur"), auto;
 }
 
-input[type="text"]:not(.input-error, .input-subtle, .input-success) {
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success) {
     background-color: rgba(0, 89, 255, 0.25);
 }
 
 input[type="text"] {
     border: none;
-    border-radius: 24px;
 
     cursor: url('Cursors/text-select.cur'), auto;
 
@@ -136,7 +135,11 @@ input[type="text"] {
     padding: 1rem;
 }
 
-input[type="text"]:not(.input-error, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-subtle, .input-success):focus {
+input[type="text"]:not(.input-search) {
+    border-radius: 24px;
+}
+
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
     background-color: rgba(0, 89, 255, 0.5);
 }
 
@@ -166,6 +169,12 @@ input[type="text"]:not(.input-error, .input-subtle, .input-success):hover, input
 
 .input-success:hover, .input-success:focus {
     background-color: rgba(0, 255, 0, 0.5);
+}
+
+.input-search {
+    background-color: transparent;
+
+    border-radius: 0;
 }
 
 .card {
@@ -372,6 +381,61 @@ input[type="text"]:not(.input-error, .input-subtle, .input-success):hover, input
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
+}
+
+.search-box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 24px;
+
+    padding-left: 1rem;
+}
+
+.search-box *, .search-box-error *, .search-box-subtle * {
+    outline: none;
+}
+
+.search-box:hover, .search-box:focus-within {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+.search-box-error {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: rgba(255, 0, 0, 0.25);
+
+    border-radius: 24px;
+
+    padding-left: 1rem;
+}
+
+.search-box-error:hover, .search-box-error:focus-within {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.search-box-subtle {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: rgba(25, 25, 25, 1);
+
+    border-radius: 24px;
+
+    padding-left: 1rem;
+}
+
+.search-box-subtle:hover, .search-box-subtle:focus-within {
+    background-color: rgba(50, 50, 50, 1);
 }
 
 .segmented-button {
