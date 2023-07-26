@@ -9,4 +9,7 @@ My CSS library
 https://nadir-software.github.io/nadircss/test.html
 
 ## Documentation
-Coming soon...
+<a href="documentation.md">documentation.md</a>
+
+## Feedback
+Please feel free to open an issue if you have suggestions. I'm quite new to web development so anything you could share would be helpful.
