@@ -33,10 +33,6 @@
     background-color: rgba(0, 89, 255, 0.5);
 }
 
-::-webkit-scrollbar-track {
-    background-color: rgba(25, 25, 25, 1);
-}
-
 .body-font-cantarell * {
     font-family: "Cantarell";
     font-weight: 300;
@@ -71,13 +67,45 @@ button {
     border: none;
     border-radius: 24rem;
 
-    cursor: url('Cursors/link-select.cur');
+    cursor: url('Cursors/link-select.cur'), auto;
 
     padding: 1rem;
 }
 
-button:hover {
+button:not(.button-error, .button-subtle, .button-icon-error, .button-icon-subtle):hover {
     background-color: rgba(0, 89, 255, 0.5);
+}
+
+.button-error {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.button-error:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.button-subtle {
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.button-subtle:hover {
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.button-icon-error {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+.button-icon-error:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.button-icon-subtle {
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.button-icon-subtle:hover {
+    background-color: rgba(50, 50, 50, 1);
 }
 
 body {
@@ -93,7 +121,7 @@ html {
     cursor: url("Cursors/normal-select.cur"), auto;
 }
 
-input[type="text"]:not(.input-error, .input-success) {
+input[type="text"]:not(.input-error, .input-subtle, .input-success) {
     background-color: rgba(0, 89, 255, 0.25);
 }
 
@@ -108,7 +136,7 @@ input[type="text"] {
     padding: 1rem;
 }
 
-input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:not(.input-error, .input-success):focus {
+input[type="text"]:not(.input-error, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-subtle, .input-success):focus {
     background-color: rgba(0, 89, 255, 0.5);
 }
 
@@ -118,6 +146,14 @@ input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:n
 
 .input-error:hover, .input-error:focus {
     background-color: rgba(255, 0, 0, 0.5);
+}
+
+.input-subtle {
+    background-color: rgba(25, 25, 25, 1);
+}
+
+.input-subtle:hover, .input-subtle:focus {
+    background-color: rgba(50, 50, 50, 1);
 }
 
 .input-success {
@@ -142,6 +178,14 @@ input[type="text"]:not(.input-error, .input-success):hover, input[type="text"]:n
 
 .card-error {
     background-color: rgba(255, 0, 0, 0.25);
+
+    border-radius: 24px;
+
+    padding: 2.5rem;
+}
+
+.card-subtle {
+    background-color: rgba(25, 25, 25, 1);
 
     border-radius: 24px;
 

@@ -15,11 +15,27 @@
         <h1>NadirCSS</h1>
     </div>
 
-    <button><span class="material-symbols-rounded">add_circle</span>Button</button>
+    <div class="row">
+        <button><span class="material-symbols-rounded">add_circle</span>Button</button>
+        <button class="button-error"><span class="material-symbols-rounded">add_circle</span>Error Button</button>
+        <button class="button-subtle"><span class="material-symbols-rounded">add_circle</span>Subtle Button</button>
+    </div>
     
     <div class="row">
-        <button class="material-symbols-rounded">edit</button>
-        <label>Icon Button</label>
+        <div class="row">
+            <button class="material-symbols-rounded">edit</button>
+            <label>Icon Button</label>
+        </div>
+
+        <div class="row">
+            <button class="material-symbols-rounded button-icon-error">edit</button>
+            <label>Error Icon Button</label>
+        </div>
+
+        <div class="row">
+            <button class="material-symbols-rounded button-icon-subtle">edit</button>
+            <label>Subtle Icon Button</label>
+        </div>
     </div>
 
     <div class="segmented-button">
@@ -31,6 +47,7 @@
     <div class="row">
         <div class="card">Card</div>
         <div class="card-error">Error Card</div>
+        <div class="card-subtle">Subtle Card</div>
         <div class="card-success">Success Card</div>
         <div class="card-warning">Warning Card</div>
     </div>
@@ -52,14 +69,15 @@
         </div>
     </div>
 
-    <div class="row">
-        <div onclick="chip('chip')" id="demo-chip" class="chip">Chip</div>
-        <div onclick="chip('chip-input')" id="demo-chip-input" class="chip-input">Input Chip</div>
-    </div>
-
     <div class="divider"></div>
+    <label><span class="material-symbols-rounded">north</span>Divider</label>
 
-    <input type="text" placeholder="Text input" class="outline-none">
+    <div class="row">
+        <input type="text" placeholder="Text input" class="outline-none">
+        <input type="text" placeholder="Text input error" class="outline-none input-error">
+        <input type="text" placeholder="Text input subtle" class="outline-none input-subtle">
+        <input type="text" placeholder="Text input success" class="outline-none input-success">
+    </div>
 
     <script src="demo-script.js"></script>
 </body>
