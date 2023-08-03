@@ -72,7 +72,7 @@ button {
     padding: 1rem;
 }
 
-button:not(.button-error, .button-subtle, .button-icon-error, .button-icon-subtle):hover {
+button:not(.button-error, .button-subtle, .button-success, .button-icon-error, .button-icon-subtle, .button-icon-success):hover {
     background-color: rgba(0, 89, 255, 0.5);
 }
 
@@ -92,6 +92,14 @@ button:not(.button-error, .button-subtle, .button-icon-error, .button-icon-subtl
     background-color: rgba(50, 50, 50, 1);
 }
 
+.button-success {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+.button-success:hover {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
 .button-icon-error {
     background-color: rgba(255, 0, 0, 0.25);
 }
@@ -106,6 +114,14 @@ button:not(.button-error, .button-subtle, .button-icon-error, .button-icon-subtl
 
 .button-icon-subtle:hover {
     background-color: rgba(50, 50, 50, 1);
+}
+
+.button-icon-success {
+    background-color: rgba(0, 255, 0, 0.25);
+}
+
+.button-icon-success:hover {
+    background-color: rgba(0, 255, 0, 0.5);
 }
 
 body {
