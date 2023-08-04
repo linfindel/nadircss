@@ -8,6 +8,8 @@ A desktop-first non-responsive CSS library.
 ## Example HTML
 https://nadir-software.github.io/nadircss/test.html
 
+A good real-world example is Nova: https://nadir-software.github.io/nova
+
 ## Documentation
 <a href="documentation.md">documentation.md</a>
 
