@@ -1,5 +1,5 @@
 # nadircss
-My CSS library
+A desktop-first non-responsive CSS library.
 
 ## Link for usage
 ```html
