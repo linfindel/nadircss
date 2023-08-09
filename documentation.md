@@ -50,13 +50,13 @@ This should be used for simple and important actions which are easy to discern f
 #### Icon button with error style
 This should be used for simple and important actions that are unavailable.
 ```html
-<button class="material-symbols-rounded button-icon-error">edit</button>
+<button class="material-symbols-rounded button-error">edit</button>
 ```
 
 #### Icon button with subtle style
 This should be used for simple and less important actions which are easy to discern from their icon.
 ```html
-<button class="material-symbols-rounded button-icon-subtle">edit</button>
+<button class="material-symbols-rounded button-subtle">edit</button>
 ```
 
 ### Cards
