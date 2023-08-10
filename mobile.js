@@ -1,4 +1,4 @@
-if (/Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)) {
+if (window.innerWidth < window.innerHeight) {
     // User is on a mobile device
     console.log('User is on a mobile device.');
 
