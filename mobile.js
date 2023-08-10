@@ -1,11 +1,9 @@
-function isMobileDevice() {
-    return typeof window.orientation !== 'undefined' || navigator.userAgent.indexOf('Mobile') !== -1;
-}
-
-if (isMobileDevice()) {
+if (/Android|iPhone/i.test(navigator.userAgent)) {
     // User is on a mobile device
     console.log('User is on a mobile device.');
-} else {
+}
+
+else {
     // User is not on a mobile device
     console.log('User is not on a mobile device.');
 }
