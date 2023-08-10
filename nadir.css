@@ -177,6 +177,12 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     border-radius: 0;
 }
 
+.bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
 .card {
     background-color: rgba(0, 89, 255, 0.25);
 
