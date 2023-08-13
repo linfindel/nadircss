@@ -51,9 +51,9 @@
     </div>
 
     <div class="segmented-button">
-        <button onclick="changeFont('cantarell')" id="demo-font-cantarell">Cantarell</button>
-        <button class="segmented-button-active" onclick="changeFont('noto')" id="demo-font-noto">Noto Sans</button>
-        <button onclick="changeFont('roboto')" id="demo-font-roboto">Roboto</button>
+        <button onclick="demoChangeFont('cantarell')" id="demo-font-cantarell">Cantarell</button>
+        <button class="segmented-button-active" onclick="demoChangeFont('noto')" id="demo-font-noto">Noto Sans</button>
+        <button onclick="demoChangeFont('roboto')" id="demo-font-roboto">Roboto</button>
     </div>
 
     <div class="row">
@@ -92,6 +92,64 @@
     </div>
 
     <div class="row">
+        <div>
+            <div class="input-extended-box">
+                <input type="text" placeholder="Extended input" class="input-search">
+                <span onclick="extendedInputMenu('demo-menu', 'demo-button')" class="material-symbols-rounded" id="demo-button">menu</span>
+            </div>
+
+            <div id="demo-menu" class="card input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                <div class="column">
+                    <button>This is just a normal card</button>
+                    <button>With 1rem of top margin</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="input-extended-box-error">
+                <input type="text" placeholder="Extended input error" class="input-search">
+                <span onclick="extendedInputMenu('demo-menu-error', 'demo-button-error')" class="material-symbols-rounded" id="demo-button-error">menu</span>
+            </div>
+
+            <div id="demo-menu-error" class="card-error input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                <div class="column">
+                    <button class="button-error">This is just a normal card</button>
+                    <button class="button-error">With 1rem of top margin</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="input-extended-box-subtle">
+                <input type="text" placeholder="Extended input subtle" class="input-search">
+                <span onclick="extendedInputMenu('demo-menu-subtle', 'demo-button-subtle')" class="material-symbols-rounded" id="demo-button-subtle">menu</span>
+            </div>
+
+            <div id="demo-menu-subtle" class="card-subtle input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                <div class="column">
+                    <button class="button-subtle">This is just a normal card</button>
+                    <button class="button-subtle">With 1rem of top margin</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="input-extended-box-success">
+                <input type="text" placeholder="Extended input success" class="input-search">
+                <span onclick="extendedInputMenu('demo-menu-success', 'demo-button-success')" class="material-symbols-rounded" id="demo-button-success">menu</span>
+            </div>
+
+            <div id="demo-menu-success" class="card-success input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                <div class="column">
+                    <button class="button-success">This is just a normal card</button>
+                    <button class="button-success">With 1rem of top margin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="search-box">
             <span class="material-symbols-rounded">search</span>
             <input type="text" placeholder="Search" class="input-search">
@@ -119,5 +177,6 @@
     </div>
 
     <script src="utils.js"></script>
+    <script src="mobile.js"></script>
 </body>
 </html>
