@@ -1,5 +1,5 @@
 # nadircss
-A desktop-first non-responsive CSS library.
+A desktop-first, non-responsive, dark mode CSS library.
 
 ## Link for usage
 ```html
