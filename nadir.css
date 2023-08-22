@@ -33,25 +33,12 @@
     background-color: rgba(0, 89, 255, 0.5);
 }
 
-.body-font-cantarell * {
-    font-family: "Cantarell";
-    font-weight: 300;
-}
-
-.body-font-noto * {
-    font-family: "Noto Sans";
-    font-weight: 200;
-}
-
-.body-font-roboto * {
-    font-family: "Roboto";
-    font-weight: 300;
-}
-
 * {
     animation-fill-mode: forwards;
     
     color: white;
+    font-family: "Noto Sans";
+    font-weight: 200;
     text-decoration: none;
 
     transition: 0.25s ease;
