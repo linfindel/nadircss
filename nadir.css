@@ -357,46 +357,6 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     background-color: rgba(50, 50, 50, 1);
 }
 
-.chip {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-
-    background-color: rgba(0, 89, 255, 0.25);
-
-    border-radius: 24rem;
-
-    cursor: pointer;
-
-    padding: 1rem;
-}
-
-.chip:hover {
-    background-color: rgba(0, 89, 255, 0.5);
-}
-
-.chip-input {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-
-    background-color: rgba(0, 89, 255, 0.25);
-
-    border-radius: 24rem;
-
-    cursor: pointer;
-
-    padding: 1rem;
-}
-
-.chip-input:hover {
-    background-color: rgba(0, 89, 255, 0.5);
-}
-
 .column {
     align-items: center;
     display: flex;
@@ -522,26 +482,26 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     background-color: rgba(50, 50, 50, 1);
 }
 
-.segmented-button {
+.text-center {
+  text-align: center;
+}
+
+.toolbar {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 0.25rem;
+    gap: 1.25rem;
     justify-content: center;
 
-    border-radius: 24rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 24px;
 
-    overflow: hidden;
+    padding: 1rem;
 }
 
-.segmented-button-active {
-    background-color: #0059ff;
-}
+.toolbar-divider {
+    background-color: rgb(100, 100, 100);
 
-.segmented-button button {
-    border-radius: 0;
-}
-
-.text-center {
-  text-align: center;
+    width: 1px;
+    height: 3.5rem;
 }
