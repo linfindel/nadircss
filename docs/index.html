@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NadirCSS Documentation</title>
+
+    <link rel="stylesheet" href="/nadir.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <style>
+        @font-face {
+            font-family: "Google logo";
+            src: url("https://nadir-software.github.io/nova/Product%20Sans%20Bold.ttf");
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>NadirCSS Documentation</h1>
+    </div>
+
+    <div class="card column">
+        <h1>Components</h1>
+
+        <div class="row">
+            <a href="#buttons" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">ads_click</span>
+
+                    Buttons
+                </button>
+            </a>
+
+            <a href="#cards" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">dashboard</span>
+
+                    Cards
+                </button>
+            </a>
+
+            <a href="#divider" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">remove</span>
+
+                    Divider
+                </button>
+            </a>
+
+            <a href="#navbar" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">settop_component</span>
+
+                    Navbar
+                </button>
+            </a>
+
+            <a href="#search" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">search</span>
+
+                    Search
+                </button>
+            </a>
+
+            <a href="#text-input" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">keyboard</span>
+
+                    Text Inputs
+                </button>
+            </a>
+
+            <a href="#toolbars" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">toolbar</span>
+
+                    Toolbars
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div id="buttons" class="toolbar" style="flex-direction: column;">
+        <h2>Buttons</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Buttons let people take action and make choices with one tap.
+
+                The default button should be used for important actions such as internal links or navigation.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Default button</h3>
+
+                <button>
+                    Create new
+                </button>
+            </div>
+
+            <p>
+                Default text buttons should always have accompanying icons.
+                
+                Icons should be relevant to the action and convey the result of the action.
+
+                Use Material Symbols Rounded for icons.
+            </p>
+
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Default button with icon</h3>
+
+                <button>
+                    <span class="material-symbols-rounded">add_circle</span>
+
+                    Create new
+                </button>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Some actions are less important or require less emphasis than others.
+
+                For this, the button should be assigned a subtle style.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Subtle button</h3>
+
+                <button class="button-subtle">
+                    <span style="font-family: 'Google logo'; font-size: 1.75rem;">G</span>
+
+                    Open in Google Search
+                </button>
+            </div>
+
+            <p>
+                Use the subtle style when linking to external products or services.
+
+                These are not associated with your product or service so should feel separate to avoid confusion.
+
+                The accompanying icon should be the logo or emblem of the external product or service, preferably in white or dark gray.
+            </p>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                A button's appearance should reflect its state, therefore there are different types of buttons for each state.
+
+                Sometimes an action is unavailable or has failed to complete.
+
+                In this case, the button should turn red.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Error button</h3>
+
+                <button disabled class="button-error">
+                    <span class="material-symbols-rounded">add_circle</span>
+
+                    Create new
+                </button>
+            </div>
+
+            <p>
+                There are two instances in which this button type should be used:
+            </p>
+
+            <div class="toolbar">
+                <ul>
+                    <li>The action is not available</li>
+                    <li>The action failed to complete after user interaction</li>
+                </ul>
+            </div>
+
+            <p>
+                If the action is not available, the button should be assigned this style and have an <code>disabled</code> attribute, meaning that the user cannot interact with the button.
+            </p>
+
+            <p>
+                If the action failed to complete, the button should be assigned this style and the <code>disabled</code> attribute for 1 second before resetting.
+            </p>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Another state is "Success".
+
+                Buttons should have this style to signify that an action was successful.
+
+                As such, the style should be assigned for 1 second before being reset to default.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Success button</h3>
+
+                <button class="button-success">
+                    <span class="material-symbols-rounded">add_circle</span>
+
+                    Created new
+                </button>
+            </div>
+
+            <p>
+                If applicable, the text should also change to reflect the result of the action.
+            </p>
+
+            <div class="toolbar">
+                <ul>
+                    <li>"Create new" changes to "Created new"</li>
+                    <li>"Copy" changes to "Copied"</li>
+                    <li>"Save" changes to "Saved"</li>
+                </ul>
+            </div>
+
+            <div class="toolbar-warning text-center">
+                <p>
+                    Exclamation marks should not be used at the end of changed text.
+
+                    They convey informality, which does not conform with the design foundations of NadirCSS.
+                </p>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                The final state is "Warning".
+
+                Buttons should have this style to indicate that an action entails risk or uncertainty, or that it may have serious consequences.
+
+                This style should be permanent.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Warning button</h3>
+
+                <button class="button-warning">
+                    <span class="material-symbols-rounded">delete_forever</span>
+
+                    Delete account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cards" class="toolbar" style="flex-direction: column;">
+        <h2>Cards</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Cards display content and actions about a single subject.
+
+                The default card should be used to display related and important information.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Default card</h3>
+
+                <div class="card column">
+                    <h1>Inky Bubbles</h1>
+
+                    <div class="card" style="background-image: url('https://lh3.googleusercontent.com/BvKj8kuRZqLpqPuuZxOl4IeHv5jaD5kT1jhn3P8EMBcmzyoHRAFXsCxNH6ZeHhQG4V1F_AegXIw2cJIBmETy7eHM27IdLQe7FqEgz6NLaXflHiHM4xyh=w2400-rj'); background-size: cover; width: 10rem; height: 5rem;"></div>
+
+                    <button>
+                        <span class="material-symbols-rounded">forum</span>
+
+                        Comment on this image
+                    </button>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                As with buttons, cards have states that reflect the information displayed within.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Error card</h3>
+
+                <div class="card-error column">
+                    <h1>Mobile device detected</h1>
+
+                    <span class="material-symbols-rounded" style="font-size: 4rem;">mobile_off</span>
+
+                    <p>Services by Nadir Technologies are not compatible with mobile devices</p>
+
+                    <div class="row">
+                        <button class="button-error">
+                            <span class="material-symbols-rounded">forum</span>
+
+                            Request this feature
+                        </button>
+
+                        <button class="button-error">
+                            <span class="material-symbols-rounded">close</span>
+
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-warning">
+                <p>
+                    Content within a card with a non-default state follows the style of the card.
+
+                    For example, the buttons in the sample error card are styled as error buttons.
+
+                    If this is the case, the buttons do not follow the typical interactivity guidelines: error buttons do not have the <code>disabled</code> attribute.
+                </p>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Subtle card</h3>
+
+                <div class="card-subtle column">
+                    <div class="search-box-subtle" style="border: 1px solid rgb(100, 100, 100);">
+                        <span class="material-symbols-rounded">search</span>
+                        <input class="input-search" type="text" placeholder="Search">
+                    </div>
+                    
+                    <div class="text-center">
+                        <h1>Pink-necked green pigeon</h1>
+                        <p><i>Treron vernans</i></p>
+                    </div>
+
+                    <div class="card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg'); background-size: cover; width: 10rem; height: 5rem;"></div>
+
+                    <div class="row">
+                        <button class="button-subtle" style="border: 1px solid rgb(100, 100, 100);">
+                            <span class="material-symbols-rounded">read_more</span>
+
+                            Learn more
+                        </button>
+
+                        <button class="button-subtle" style="border: 1px solid rgb(100, 100, 100);">
+                            <span class="material-symbols-rounded">close</span>
+
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-warning">
+                Subtle buttons, search, and text inputs have the same background color as subtle cards.
+
+                This means that a subtle button, search, or text input on a subtle card will be difficult to distinguish.
+
+                As such, a 1px border of rgb(100, 100, 100) should be added.
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Success card</h3>
+
+                <div class="card-success column">
+                    <h1>Cloud clean complete</h1>
+                    
+                    <div class="card-success">
+                        <h2>25MB saved</h2>
+                    </div>
+
+                    <div class="row">
+                        <button class="button-success">
+                            <span class="material-symbols-rounded">delete_sweep</span>
+
+                            Clean more
+                        </button>
+
+                        <button class="button-success">
+                            <span class="material-symbols-rounded">close</span>
+    
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-warning">
+                <p>
+                    Use cards within cards to highlight extra important information.
+
+                    Never nest cards more than twice: this leads to clutter.
+                </p>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Warning card</h3>
+
+                <div class="card-warning column">
+                    <h1>Delete account</h1>
+
+                    <div class="card-warning column">
+                        <p>This action cannot be undone.</p>
+
+                        <button class="button-warning">
+                            <span class="material-symbols-rounded">download</span>
+
+                            Download my data
+                        </button>
+                    </div>
+
+                    <div class="row">
+                        <button class="button-warning">
+                            <span class="material-symbols-rounded">delete_forever</span>
+    
+                            Delete my account
+                        </button>
+
+                        <button class="button-warning">
+                            <span class="material-symbols-rounded">cancel</span>
+    
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-warning">
+                <p>
+                    When nesting cards, you may include one button in the nested card.
+
+                    The button must be extremely significant to merit this.
+
+                    Downloading a copy of collected user data before deleting an account is important to some users and not directly related to other available actions, thus warranting the triple nesting.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="divider" class="toolbar" style="flex-direction: column;">
+        <h2>Divider</h2>
+
+        <div class="toolbar-divider-horizontal"></div> 
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Dividers are thin lines that group content in lists or other containers.
+
+                The default divider is used to separate unrelated sections of a page.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Divider</h3>
+
+                <h1>Section 1</h1>
+
+                <div class="divider"></div>
+
+                <h1>Section 2</h1>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Toolbars have distinct sections so require dividers as well.
+
+                These can be vertical or horizontal depending on the use case.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Vertical toolbar divider</h3>
+
+                <div class="toolbar">
+                    <button>
+                        <span class="material-symbols-rounded">add_circle</span>
+
+                        Create new
+                    </button>
+
+                    <button>
+                        <span class="material-symbols-rounded">file_open</span>
+
+                        Open
+                    </button>
+
+                    <div class="toolbar-divider"></div>
+
+                    <button>
+                        <span class="material-symbols-rounded">share</span>
+
+                        Share
+                    </button>
+
+                    <button>
+                        <span class="material-symbols-rounded">logout</span>
+
+                        Sign out
+                    </button>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Horizontal toolbar divider</h3>
+
+                <div class="toolbar" style="flex-direction: column;">
+                    <h1>Section 1</h1>
+
+                    <div class="toolbar-divider-horizontal"></div>
+
+                    <h1>Section 2</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="navbar" class="toolbar" style="flex-direction: column;">
+        <h2>Navbar</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Navbars display the title of the current produce or service, helping users to locate and navigate different products or services in an ecosystem.
+
+                They are always located at the top of a page.
+
+                This consistency aids in navigation.
+            </p>
+
+            <div class="toolbar-warning">
+                <p>
+                    Navigate to the top of the page to see a navbar.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="search" class="toolbar" style="flex-direction: column;">
+        <h2>Search</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Search lets people enter a keyword or phrase to get relevant information.
+
+                Search consists of a decorative icon and a text input field.
+
+                Search also follows states, which correspond to the retrieval of information.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Search</h3>
+
+                <div class="search-box">
+                    <span class="material-symbols-rounded">search</span>
+
+                    <input class="input-search" type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Subtle search is used for less important queries or to fit the style of a card.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Subtle search</h3>
+
+                <div class="search-box-subtle">
+                    <span class="material-symbols-rounded">search</span>
+
+                    <input class="input-search" type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Error search indicates that a search has failed to find relevant information.
+
+                This style should be applied for 1 second after the user's search has failed.
+
+                There is no success search: the user should infer success by the lack of error styles and the presence of useful information.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Error search</h3>
+
+                <div class="search-box-error">
+                    <span class="material-symbols-rounded">search</span>
+
+                    <input class="input-search" type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="text-input" class="toolbar" style="flex-direction: column;">
+        <h2>Text inputs</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Text inputs let users enter text into a UI.
+
+                The default text input should be used for important information.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Default text input</h3>
+
+                <input type="text" placeholder="Input text">
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Subtle text input should be used for less important information or to match the style of a card.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Subtle text input</h3>
+
+                <input class="input-subtle" type="text" placeholder="Input text">
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Error text input should be used when the user has inputted invalid or incorrect information.
+
+                This style should be applied for 1 second after the user's input was evaluated.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Error text input</h3>
+
+                <input class="input-error" type="text" placeholder="Input text">
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Success text input should be used in two different ways for two different scenarios:
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <ul>
+                    <li>The user previously inputted invalid text and then inputted valid text</li>
+                    <li>The user inputted valid text into a validity checker, for example in the Format Checker service</li>
+                </ul>
+
+                <div class="toolbar-divider-horizontal"></div>
+
+                <a href="https://nadir-software.github.io/format-checker" target="_blank" tabindex="-99">
+                    <button>
+                        <span class="material-symbols-rounded">open_in_new</span>
+
+                        Open Format Checker
+                    </button>
+                </a>
+            </div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Success text input</h3>
+
+                <input class="input-success" type="text" placeholder="Input text">
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Extended text inputs allow users to select the format of their input. 
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Default extended text input</h3>
+
+                <div>
+                    <div class="input-extended-box">
+                        <input class="input-search" type="text" placeholder="Input text">
+
+                        <span id="demo-button" onclick="extendedInputMenu('demo-menu', 'demo-button')" class="material-symbols-rounded">menu</span>
+                    </div>
+
+                    <div id="demo-menu" class="card input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                        <div class="column">
+                            <button>This is just a normal card</button>
+                            <button>With 1rem of top margin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Subtle extended text input</h3>
+
+                <div>
+                    <div class="input-extended-box-subtle">
+                        <input type="text" placeholder="Input text" class="input-search">
+                        <span onclick="extendedInputMenu('demo-menu-subtle', 'demo-button-subtle')" class="material-symbols-rounded" id="demo-button-subtle">menu</span>
+                    </div>
+        
+                    <div id="demo-menu-subtle" class="card-subtle input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                        <div class="column">
+                            <button style="border: 1px solid rgb(100, 100, 100);" class="button-subtle">This is just a normal card</button>
+                            <button style="border: 1px solid rgb(100, 100, 100);" class="button-subtle">With 1rem of top margin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Error extended text input</h3>
+
+                <div>
+                    <div class="input-extended-box-error">
+                        <input type="text" placeholder="Input text" class="input-search">
+                        <span onclick="extendedInputMenu('demo-menu-error', 'demo-button-error')" class="material-symbols-rounded" id="demo-button-error">menu</span>
+                    </div>
+        
+                    <div id="demo-menu-error" class="card-error input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                        <div class="column">
+                            <button class="button-error">This is just a normal card</button>
+                            <button class="button-error">With 1rem of top margin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Success extended text input</h3>
+
+                <div>
+                    <div class="input-extended-box-success">
+                        <input type="text" placeholder="Extended input success" class="input-search">
+                        <span onclick="extendedInputMenu('demo-menu-success', 'demo-button-success')" class="material-symbols-rounded" id="demo-button-success">menu</span>
+                    </div>
+        
+                    <div id="demo-menu-success" class="card-success input-extended-menu-closed" style="height: 0; margin-top: 0; opacity: 0; padding: 0; pointer-events: none;">
+                        <div class="column">
+                            <button class="button-success">This is just a normal card</button>
+                            <button class="button-success">With 1rem of top margin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolbars" class="toolbar" style="flex-direction: column;">
+        <h2>Toolbars</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Toolbars encapsulate related elements in a less visually intensive way than cards.
+
+                This makes them ideal for large blocks of text or content since they redirect attention to the content rather tha themselves.
+
+                They can also be used to form floating bottom app bars, like in Nova.
+            </p>
+
+            <a href="https://nadir-software.github.io/nova" target="_blank" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">open_in_new</span>
+
+                    Open Nova
+                </button>
+            </a>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Horizontal toolbar</h3>
+
+                <div class="toolbar">
+                    <button>
+                        <span class="material-symbols-rounded">add_circle</span>
+
+                        Create new
+                    </button>
+
+                    <button>
+                        <span class="material-symbols-rounded">file_open</span>
+
+                        Open
+                    </button>
+
+                    <div class="toolbar-divider"></div>
+
+                    <button>
+                        <span class="material-symbols-rounded">share</span>
+
+                        Share
+                    </button>
+
+                    <button>
+                        <span class="material-symbols-rounded">logout</span>
+
+                        Sign out
+                    </button>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Vertical toolbar</h3>
+
+                <div class="toolbar" style="flex-direction: column;">
+                    <h1>Section 1</h1>
+
+                    <div class="toolbar-divider-horizontal"></div>
+
+                    <h1>Section 2</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/utils.js"></script>
+</body>
+</html>

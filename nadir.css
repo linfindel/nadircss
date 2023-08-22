@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@font-face {
-    font-family: "Cantarell";
-    src: url("Cantarell.otf");
-}
-
 @keyframes nova {
     0% {
         box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
@@ -41,6 +36,8 @@
     font-weight: 200;
     text-decoration: none;
 
+    scroll-behavior: smooth;
+
     transition: 0.25s ease;
 }
 
@@ -56,9 +53,11 @@ button {
     border: none;
     border-radius: 24rem;
 
-    cursor: url('Cursors/link-select.cur'), auto;
-
     padding: 1rem;
+}
+
+button:not(:disabled) {
+    cursor: url('Cursors/link-select.cur'), auto;
 }
 
 button:not(.button-error, .button-subtle, .button-success, .button-warning):hover {
@@ -69,7 +68,7 @@ button:not(.button-error, .button-subtle, .button-success, .button-warning):hove
     background-color: rgba(255, 0, 0, 0.25);
 }
 
-.button-error:hover {
+.button-error:not(:disabled):hover {
     background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -104,6 +103,10 @@ body {
     gap: 2.5rem;
     
     background-color: black;
+}
+
+code {
+    font-family: monospace;
 }
 
 html {
@@ -288,62 +291,6 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     padding: 2.5rem;
 }
 
-.checkbox-column {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.checkbox-column * {
-    max-width: 50%;
-}
-
-.checkbox-indeterminate {
-    background-color: rgba(255, 255, 0, 0.25);
-
-    border-radius: 5px;
-
-    cursor: pointer;
-
-    padding: 1rem;
-}
-
-.checkbox-indeterminate:hover {
-    background-color: rgba(255, 255, 0, 0.5);
-}
-
-.checkbox-selected {
-    background-color: rgba(0, 89, 255, 0.25);
-
-    border-radius: 5px;
-
-    cursor: pointer;
-
-    padding: 1rem;
-}
-
-.checkbox-selected:hover {
-    background-color: rgba(0, 89, 255, 0.5);
-}
-
-.checkbox-unselected {
-    background-color: rgba(25, 25, 25, 1);
-
-    border-radius: 5px;
-
-    color: transparent;
-
-    cursor: pointer;
-
-    padding: 1rem;
-}
-
-.checkbox-unselected:hover {
-    background-color: rgba(50, 50, 50, 1);
-}
-
 .column {
     align-items: center;
     display: flex;
@@ -353,31 +300,10 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
 }
 
 .divider {
-    background-image: linear-gradient(90deg, transparent, rgba(0, 89, 255, 0.6), rgba(0, 89, 255, 0.5), rgba(0, 89, 255, 0.6), transparent);
+    background-color: rgb(100, 100, 100);
 
-    width: 75vw;
+    width: 40vw;
     height: 0.05rem;
-}
-
-.logo-nova {
-    animation: 2.5s nova infinite;
-
-    background-color: black;
-
-    border: 2px solid #0059ff;
-    border-radius: 100%;
-
-    width: 7.5vw;
-    height: 7.5vw;
-}
-
-.logo-words {
-    background-image: linear-gradient(to right, rgb(67, 206, 162), rgb(24, 90, 157));
-
-    border-radius: 10px;
-
-    width: 15vw;
-    height: 15vh;
 }
 
 .material-symbols-rounded {
@@ -395,9 +321,6 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     background-color: rgba(0, 89, 255, 0.25);
 
     border-radius: 24px;
-
-    position: sticky;
-    top: 0;
 
     width: 100%;
 }
@@ -486,9 +409,31 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     padding: 1rem;
 }
 
+.toolbar-warning {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 0, 0.5);
+    border-radius: 24px;
+
+    padding: 1rem;
+}
+
 .toolbar-divider {
     background-color: rgb(100, 100, 100);
 
     width: 1px;
     height: 3.5rem;
+}
+
+.toolbar-divider-horizontal {
+    background-color: rgb(100, 100, 100);
+
+    height: 1px;
+    width: 3.5rem;
+
+    margin: 1rem;
 }
