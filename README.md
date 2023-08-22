@@ -1,5 +1,8 @@
-# nadircss
+# NadirCSS
 A desktop-first, non-responsive, dark mode CSS library.
+
+## Documentation
+https://nadir-software.github.io/nadircss/docs
 
 ## Link for usage
 ```html
