@@ -66,6 +66,14 @@
                 </button>
             </a>
 
+            <a href="#snackbar" tabindex="-99">
+                <button>
+                    <span class="material-symbols-rounded">call_to_action</span>
+
+                    Snackbar
+                </button>
+            </a>
+
             <a href="#text-input" tabindex="-99">
                 <button>
                     <span class="material-symbols-rounded">keyboard</span>
@@ -622,6 +630,30 @@
         </div>
     </div>
 
+    <div id="snackbar" class="toolbar" style="flex-direction: column;">
+        <h2>Snackbar</h2>
+
+        <div class="toolbar-divider-horizontal"></div>
+
+        <div class="column" style="width: 40rem;">
+            <p>
+                Snackbars show short updates about system processes at the bottom of the screen.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Snackbar</h3>
+
+                <div class="snackbar">
+                    <p>Search is case-sensitive</p>
+
+                    <button style="border: 1px solid rgb(100, 100, 100);" class="material-symbols-rounded button-subtle">
+                        close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="text-input" class="toolbar" style="flex-direction: column;">
         <h2>Text inputs</h2>
 
@@ -847,6 +879,26 @@
                     <div class="toolbar-divider-horizontal"></div>
 
                     <h1>Section 2</h1>
+                </div>
+            </div>
+
+            <div class="toolbar-divider-horizontal"></div>
+
+            <p>
+                Warning toolbars should be used to display large volumes of important guidance or information.
+            </p>
+
+            <div class="toolbar" style="flex-direction: column;">
+                <h3>Warning toolbar</h3>
+
+                <div class="toolbar-warning">
+                    <p>
+                        Content within a card with a non-default state follows the style of the card.
+    
+                        For example, the buttons in the sample error card are styled as error buttons.
+    
+                        If this is the case, the buttons do not follow the typical interactivity guidelines: error buttons do not have the <code>disabled</code> attribute.
+                    </p>
                 </div>
             </div>
         </div>
