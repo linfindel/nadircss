@@ -325,6 +325,21 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     width: 100%;
 }
 
+.navbar-error {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(255, 0, 0, 0.25);
+
+    border-radius: 24px;
+
+    width: 100%;
+}
+
 .outline-none {
     outline: none;
 }
