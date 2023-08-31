@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@keyframes nova {
+@keyframes progress-determinate {
     0% {
-        box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+        width: 0;
     }
-  
-    50% {
-        box-shadow: 0px 0px 0.000001px 20px rgba(0, 89, 255, 0.2), 0px 0px 500px 10px #0059ff;
-    }
-  
+
     100% {
-        box-shadow: 0px 0px 0.000001px 12.5px rgba(0, 89, 255, 0.2), 0px 0px 500px 5px #0059ff;
+        width: 100%;
     }
 }
 
@@ -342,6 +338,26 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
 
 .outline-none {
     outline: none;
+}
+
+.progress {
+    background-color: rgba(25, 25, 25, 1);
+
+    border-radius: 24rem;
+
+    overflow: hidden;
+
+    width: 50vw;
+    height: 0.5rem;
+}
+
+.progress-bar-determinate {
+    animation: 5s progress-determinate linear;
+
+    background-color: rgba(0, 89, 255, 0.5);
+
+    width: 50vw;
+    height: 0.5rem;
 }
 
 .row {
