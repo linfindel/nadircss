@@ -113,7 +113,7 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     background-color: rgba(0, 89, 255, 0.25);
 }
 
-input[type="text"] {
+input[type="text"], input[type="number"] {
     border: none;
 
     cursor: url('Cursors/text-select.cur'), auto;
@@ -123,11 +123,11 @@ input[type="text"] {
     padding: 1rem;
 }
 
-input[type="text"]:not(.input-search) {
+input[type="text"]:not(.input-search), input[type="number"] {
     border-radius: 24px;
 }
 
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus, input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
     background-color: rgba(0, 89, 255, 0.5);
 }
 
