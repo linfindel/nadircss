@@ -109,7 +109,7 @@ html {
     cursor: url("Cursors/normal-select.cur"), auto;
 }
 
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success) {
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success), input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success) {
     background-color: rgba(0, 89, 255, 0.25);
 }
 
