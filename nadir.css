@@ -271,7 +271,7 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     padding: 2.5rem;
 }
 
-.card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle {
+.card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle, .snackbar .button-subtle, .snackbar .input-subtle, .snackbar .search-box-subtle {
     border: 1px solid rgb(100, 100, 100);
 }
 
