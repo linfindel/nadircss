@@ -271,6 +271,10 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     padding: 2.5rem;
 }
 
+.card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle {
+    border: 1px rgb(100, 100, 100);
+}
+
 .card-success {
     background-color: rgba(0, 255, 0, 0.25);
 
