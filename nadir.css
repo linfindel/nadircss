@@ -241,6 +241,19 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
     outline: none;
 }
 
+textarea {
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border: none;
+    border-radius: 24px;
+
+    padding: 1rem;
+}
+
+textarea:focus {
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
 .bottom {
     position: absolute;
     bottom: 0;
