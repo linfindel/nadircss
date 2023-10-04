@@ -254,6 +254,10 @@ textarea:focus {
     background-color: rgba(0, 89, 255, 0.5);
 }
 
+img {
+    border-radius: 24px;
+}
+
 .bottom {
     position: absolute;
     bottom: 0;
