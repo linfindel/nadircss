@@ -37,6 +37,10 @@
     transition: 0.25s ease;
 }
 
+a {
+    border-radius: 24px;
+}
+
 button {
     align-items: center;
     display: flex;
