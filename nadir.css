@@ -431,3 +431,10 @@ img {
 
     margin: 1rem;
 }
+
+.absolute-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
