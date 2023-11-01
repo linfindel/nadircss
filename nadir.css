@@ -285,6 +285,21 @@ img, video {
     width: 100%;
 }
 
+.navbar-success {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(0, 255, 0, 0.25);
+    
+    border-radius: 24px;
+
+    width: 100%;
+}
+
 .outline-none {
     outline: none;
 }
