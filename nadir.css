@@ -178,7 +178,7 @@ textarea {
     padding: 1rem;
 }
 
-textarea:focus {
+textarea:focus, textarea:hover {
     background-color: rgba(0, 89, 255, 0.5);
 }
 
