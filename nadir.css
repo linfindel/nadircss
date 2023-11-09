@@ -41,6 +41,10 @@ a {
     border-radius: 24px;
 }
 
+audio {
+    filter: invert();
+}
+
 button {
     align-items: center;
     display: flex;
