@@ -196,6 +196,12 @@ img, video {
     margin-bottom: 1rem;
 }
 
+.top {
+    position: absolute;
+    top: 0;
+    margin-top: 1rem;
+}
+
 .card {
     background-color: rgba(0, 89, 255, 0.25);
 
