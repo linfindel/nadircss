@@ -246,6 +246,26 @@ img, video {
     padding: 2.5rem;
 }
 
+.card-interactive:hover {
+    background-color: rgba(0, 89, 255, 0.5);
+    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+}
+
+.card-error-interactive:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+}
+
+.card-success-interactive:hover {
+    background-color: rgba(0, 255, 0, 0.5);
+    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+}
+
+.card-warning-interactive:hover {
+    background-color: rgba(255, 255, 0, 0.5);
+    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+}
+
 .column {
     align-items: center;
     display: flex;
