@@ -514,6 +514,14 @@ img, video {
     justify-content: center;
 }
 
+.column-flat {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
 .divider {
     background-color: rgb(100, 100, 100);
 
