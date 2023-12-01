@@ -611,6 +611,15 @@ img, video {
     justify-content: center;
 }
 
+.column-flat {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
 .search-box {
     align-items: center;
     display: flex;
