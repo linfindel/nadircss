@@ -611,7 +611,7 @@ img, video {
     justify-content: center;
 }
 
-.column-flat {
+.row-flat {
     align-items: center;
     display: flex;
     flex-direction: row;
