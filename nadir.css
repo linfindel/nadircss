@@ -374,7 +374,7 @@ img, video {
     padding: 2.5rem;
 }
 
-.card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle, .snackbar .button-subtle, .snackbar .input-subtle, .snackbar .search-box-subtle {
+.card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle, .card-subtle-flat .search-box-subtle, .card-subtle-flat .button-subtle, .card-subtle-flat-bottom .search-box-subtle, .card-subtle-flat-bottom .button-subtle, .card-subtle-flat-bottom .input-subtle, .card-subtle-flat-left .search-box-subtle, .card-subtle-flat-left .button-subtle, .card-subtle-flat-left .input-subtle, .card-subtle-flat-right .button-subtle, .card-subtle-flat-right .input-subtle, .card-subtle-flat-right .search-box-subtle,  .card-subtle-flat-top .button-subtle, .card-subtle-flat-top .input-subtle, .card-subtle-flat-top .search-box-subtle, .snackbar .button-subtle, .snackbar .input-subtle, .snackbar .search-box-subtle {
     border: 1px solid rgb(100, 100, 100);
 }
 
