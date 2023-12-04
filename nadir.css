@@ -117,6 +117,10 @@ html {
     cursor: url("Cursors/normal-select.cur"), auto;
 }
 
+input {
+    outline: none;
+}
+
 input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success), input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success) {
     background-color: rgba(0, 89, 255, 0.25);
 }
@@ -761,8 +765,8 @@ img, video {
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type=number] {
