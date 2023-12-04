@@ -61,7 +61,7 @@ button {
 }
 
 button:not(:disabled) {
-    cursor: url('Cursors/link-select.cur'), auto;
+    cursor: url('cursors/link-select.cur'), auto;
 }
 
 button:not(.button-error, .button-subtle, .button-success, .button-warning):hover {
@@ -114,7 +114,7 @@ code {
 }
 
 html {
-    cursor: url("Cursors/normal-select.cur"), auto;
+    cursor: url("cursors/normal-select.cur"), auto;
 }
 
 input {
@@ -128,7 +128,7 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
 input[type="text"], input[type="number"] {
     border: none;
 
-    cursor: url('Cursors/text-select.cur'), auto;
+    cursor: url('cursors/text-select.cur'), auto;
 
     font-weight: 300;
 
@@ -492,22 +492,22 @@ img, video {
 
 .card-interactive:hover {
     background-color: rgba(0, 89, 255, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-error-interactive:hover {
     background-color: rgba(255, 0, 0, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-success-interactive:hover {
     background-color: rgba(0, 255, 0, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-warning-interactive:hover {
     background-color: rgba(255, 255, 0, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/Cursors/link-select.cur'), auto;
+    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .column {
