@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NadirCSS</title>
+
+    <link rel="stylesheet" href="../../nadir.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        .column-flat:not(.hole .column-flat) > * {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-column">
+        <div class="navbar">
+            <h1>NadirCSS</h1>
+        </div>
+
+        <button onclick="location.href = '../'">
+            <span class="material-symbols-rounded">arrow_back</span>
+            Back
+        </button>
+    </div>
+
+    <div class="column-flat">
+        <div class="card-flat-bottom text-center">
+            <h1>Cards</h1>
+            <p>Cards display related content and actions about a single subject</p>
+        </div>
+
+        <div class="card-flat column text-center">
+            <div class="text-center">
+                <h2>Default card</h2>
+                <p>The initial state of all cards</p>
+            </div>
+
+            <div id="default-card" class="row hole">
+                <div class="card column">
+                    <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+
+                    <div class="text-center">
+                        <h1>New York City</h1>
+                        <p>City in New York State</p>
+                    </div>
+
+                    <div class="row">
+                        <button>
+                            <span class="material-symbols-rounded">flights_and_hotels</span>
+                            Book trip
+                        </button>
+
+                        <button>
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            More info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="default-card-trigger" onclick="copy('default-card')">
+                <span id="default-card-trigger-icon" class="material-symbols-rounded">content_copy</span>
+                <span id="default-card-trigger-text">Copy code</span>
+            </button>
+        </div>
+
+        <div class="card-flat column text-center">
+            <div class="text-center">
+                <h2>Error card</h2>
+                <p>Used to prominently display failed or dangerous related content within a larger context</p>
+            </div>
+
+            <div id="error-card" class="row hole">
+                <div class="card-error column">
+                    <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+
+                    <div class="text-center">
+                        <h1>New York City</h1>
+                        <p>City in New York State</p>
+                    </div>
+
+                    <div class="row">
+                        <button class="button-error">
+                            <span class="material-symbols-rounded">flights_and_hotels</span>
+                            Book trip
+                        </button>
+
+                        <button class="button-error">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            More info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="error-card-trigger" onclick="copy('error-card')">
+                <span id="error-card-trigger-icon" class="material-symbols-rounded">content_copy</span>
+                <span id="error-card-trigger-text">Copy code</span>
+            </button>
+        </div>
+
+        <div class="card-flat column text-center">
+            <div class="text-center">
+                <h2>Subtle card</h2>
+                <p>Used when an related content is less significant or temporarily unavailable</p>
+            </div>
+
+            <div id="subtle-card" class="row hole">
+                <div class="card-subtle column">
+                    <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+
+                    <div class="text-center">
+                        <h1>New York City</h1>
+                        <p>City in New York State</p>
+                    </div>
+
+                    <div class="row">
+                        <button class="button-subtle">
+                            <span class="material-symbols-rounded">flights_and_hotels</span>
+                            Book trip
+                        </button>
+
+                        <button class="button-subtle">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            More info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="subtle-card-trigger" onclick="copy('subtle-card')">
+                <span id="subtle-card-trigger-icon" class="material-symbols-rounded">content_copy</span>
+                <span id="subtle-card-trigger-text">Copy code</span>
+            </button>
+        </div>
+
+        <div class="card-flat column text-center">
+            <div class="text-center">
+                <h2>Success card</h2>
+                <p>Used when an related content has been successful or completed</p>
+            </div>
+
+            <div id="success-card" class="row hole">
+                <div class="card-success column">
+                    <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+
+                    <div class="text-center">
+                        <h1>New York City</h1>
+                        <p>City in New York State</p>
+                    </div>
+
+                    <div class="row">
+                        <button inert class="button-success">
+                            <span class="material-symbols-rounded">flights_and_hotels</span>
+                            Trip booked
+                        </button>
+
+                        <button class="button-success">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            More info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="success-card-trigger" onclick="copy('success-card')">
+                <span id="success-card-trigger-icon" class="material-symbols-rounded">content_copy</span>
+                <span id="success-card-trigger-text">Copy code</span>
+            </button>
+        </div>
+
+        <div class="card-flat column text-center">
+            <div class="text-center">
+                <h2>Warning card</h2>
+                <p>Used when related content has potential consequences or has an uncertain outcome</p>
+            </div>
+
+            <div id="warning-card" class="row hole">
+                <div class="card-warning column">
+                    <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+
+                    <div class="text-center">
+                        <h1>New York City</h1>
+                        <p>City in New York State</p>
+                    </div>
+
+                    <div class="row">
+                        <button class="button-warning">
+                            <span class="material-symbols-rounded">flights_and_hotels</span>
+                            Book trip
+                        </button>
+
+                        <button class="button-warning">
+                            <span class="material-symbols-rounded">open_in_new</span>
+                            More info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button id="warning-card-trigger" onclick="copy('warning-card')">
+                <span id="warning-card-trigger-icon" class="material-symbols-rounded">content_copy</span>
+                <span id="warning-card-trigger-text">Copy code</span>
+            </button>
+        </div>
+
+        <div class="card-flat-top column text-center">
+            <div class="text-center">
+                <h2>Flat cards</h2>
+                <p>Used to group related cards</p>
+            </div>
+
+            <div id="flat-card" class="row hole">
+                <div class="column-flat">
+                    <div class="card-flat-bottom column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>New York City</h1>
+                            <p>City in New York State</p>
+                        </div>
+                        <div class="row">
+                            <button>
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button>
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-flat column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/GG-ftpoint-bridge-2.jpg/1024px-GG-ftpoint-bridge-2.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>San Francisco</h1>
+                            <p>City in California</p>
+                        </div>
+                        <div class="row">
+                            <button>
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button>
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-flat-top column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1024px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>Paris</h1>
+                            <p>City in France</p>
+                        </div>
+                        <div class="row">
+                            <button>
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button>
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-error-flat-bottom column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>New York City</h1>
+                            <p>City in New York State</p>
+                        </div>
+                        <div class="row">
+                            <button class="button-error">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button class="button-error">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-error-flat column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/GG-ftpoint-bridge-2.jpg/1024px-GG-ftpoint-bridge-2.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>San Francisco</h1>
+                            <p>City in California</p>
+                        </div>
+                        <div class="row">
+                            <button class="button-error">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button class="button-error">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-error-flat-top column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1024px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>Paris</h1>
+                            <p>City in France</p>
+                        </div>
+                        <div class="row">
+                            <button class="button-error">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button class="button-error">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-subtle-flat-bottom column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>New York City</h1>
+                            <p>City in New York State</p>
+                        </div>
+                        <div class="row">
+                            <button class="button-subtle">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button class="button-subtle">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-subtle-flat column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/GG-ftpoint-bridge-2.jpg/1024px-GG-ftpoint-bridge-2.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>San Francisco</h1>
+                            <p>City in California</p>
+                        </div>
+                        <div class="row">
+                            <button class="button-subtle">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button class="button-subtle">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-subtle-flat-top column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1024px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>Paris</h1>
+                            <p>City in France</p>
+                        </div>
+                        <div class="row">
+                            <button class="button-subtle">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Book trip
+                            </button>
+                            <button class="button-subtle">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-success-flat-bottom column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>New York City</h1>
+                            <p>City in New York State</p>
+                        </div>
+                        <div class="row">
+                            <button inert class="button-success">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Trip booked
+                            </button>
+                            <button class="button-success">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-success-flat column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/GG-ftpoint-bridge-2.jpg/1024px-GG-ftpoint-bridge-2.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>San Francisco</h1>
+                            <p>City in California</p>
+                        </div>
+                        <div class="row">
+                            <button inert class="button-success">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Trip booked
+                            </button>
+                            <button class="button-success">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="card-success-flat-top column">
+                        <img style="width: 15rem; height: 10rem; object-fit: cover;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1024px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="An image of New York City">
+                        <div class="text-center">
+                            <h1>Paris</h1>
+                            <p>City in France</p>
+                        </div>
+                        <div class="row">
+                            <button inert class="button-success">
+                                <span class="material-symbols-rounded">flights_and_hotels</span>
+                                Trip booked
+                            </button>
+                            <button class="button-success">
+                                <span class="material-symbols-rounded">open_in_new</span>
+                                More info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="flat-card-trigger" onclick="copy('flat-card')">
+                <span id="flat-card-trigger-icon" class="material-symbols-rounded">content_copy</span>
+                <span id="flat-card-trigger-text">Copy code</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="../copy.js"></script>
+</body>
+</html>
