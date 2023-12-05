@@ -2,9 +2,9 @@
 An ultraminimalist dark mode CSS library.
 
 ## Documentation
-https://nadir-software.github.io/nadircss/docs
+https://linfindel.github.io/nadircss/docs
 
 ## Usage
 ```html
-<link rel="stylesheet" href="https://nadir-software.github.io/nadircss/nadir.css">
+<link rel="stylesheet" href="https://linfindel.github.io/nadircss/nadir.css">
 ```
