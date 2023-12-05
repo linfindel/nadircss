@@ -492,22 +492,22 @@ img, video {
 
 .card-interactive:hover {
     background-color: rgba(0, 89, 255, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
+    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-error-interactive:hover {
     background-color: rgba(255, 0, 0, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
+    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-success-interactive:hover {
     background-color: rgba(0, 255, 0, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
+    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-warning-interactive:hover {
     background-color: rgba(255, 255, 0, 0.5);
-    cursor: url('https://nadir-software.github.io/nadircss/cursors/link-select.cur'), auto;
+    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .column {
