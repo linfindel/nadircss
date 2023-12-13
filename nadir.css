@@ -772,3 +772,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+
+.tooltip {
+    background-color: rgba(0, 89, 255, 0.25);
+
+    border-radius: 100vw;
+}
