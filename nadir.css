@@ -105,10 +105,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-
-    margin: 0.5rem;
-
     background-color: black;
+}
+
+@-moz-document url-prefix() {
+    body {
+        margin: 8px;
+    }
 }
 
 code {
