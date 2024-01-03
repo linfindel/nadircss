@@ -1,807 +1,807 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @keyframes progress-determinate {
-    0% {
-        width: 0;
-    }
+  0% {
+    width: 0;
+  }
 
-    100% {
-        width: 100%;
-    }
+  100% {
+    width: 100%;
+  }
 }
 
 ::-webkit-scrollbar {
-    width: 1rem;
+  width: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25);
 
-    border-radius: 24rem;
+  border-radius: 24rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(100, 100, 100);
+  background-color: rgb(100, 100, 100);
 }
 
 * {
-    animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-    color: white;
-    font-family: "Noto Sans";
-    font-weight: 200;
-    text-decoration: none;
+  color: white;
+  font-family: "Noto Sans";
+  font-weight: 200;
+  text-decoration: none;
 
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
-    transition: 0.25s ease;
+  transition: 0.25s ease;
 }
 
 a {
-    border-radius: 24px;
+  border-radius: 24px;
 }
 
 audio {
-    filter: invert();
+  filter: invert();
 }
 
 button {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border: none;
-    border-radius: 24rem;
+  border: none;
+  border-radius: 24rem;
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 button:not(:disabled) {
-    cursor: url('cursors/link-select.cur'), auto;
+  cursor: url('cursors/link-select.cur'), auto;
 }
 
 button:not(.button-error, .button-subtle, .button-success, .button-warning):hover {
-    background-color: rgba(0, 89, 255, 0.5);
+  background-color: rgba(0, 89, 255, 0.5);
 }
 
 .button-error {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 }
 
 .button-error:not(:disabled):hover {
-    background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .button-subtle {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 }
 
 .button-subtle:hover {
-    background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(50, 50, 50, 1);
 }
 
 .button-success {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 }
 
 .button-success:hover {
-    background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.5);
 }
 
 .button-warning {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 }
 
 .button-warning:hover {
-    background-color: rgba(255, 255, 0, 0.5);
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
 body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    background-color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: black;
 }
 
 @-moz-document url-prefix() {
-    body {
-        margin: 8px;
-    }
+  body {
+    margin: 8px;
+  }
 }
 
 code {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 html {
-    cursor: url("cursors/normal-select.cur"), auto;
+  cursor: url("cursors/normal-select.cur"), auto;
 }
 
 input {
-    outline: none;
+  outline: none;
 }
 
 input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success), input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success) {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 }
 
 input[type="text"], input[type="number"] {
-    border: none;
+  border: none;
 
-    cursor: url('cursors/text-select.cur'), auto;
+  cursor: url('cursors/text-select.cur'), auto;
 
-    font-weight: 300;
+  font-weight: 300;
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 input[type="text"]:not(.input-search), input[type="number"] {
-    border-radius: 24px;
+  border-radius: 24px;
 }
 
 input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus, input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
-    background-color: rgba(0, 89, 255, 0.5);
+  background-color: rgba(0, 89, 255, 0.5);
 }
 
 .input-error {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 }
 
 .input-error:hover, .input-error:focus {
-    background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .input-subtle {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 }
 
 .input-subtle:hover, .input-subtle:focus {
-    background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(50, 50, 50, 1);
 }
 
 .input-success {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 }
 
 .input-success::placeholder {
-    color: rgb(25, 25, 25);
+  color: rgb(25, 25, 25);
 }
 
 .input-success:hover, .input-success:focus {
-    background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.5);
 }
 
 .input-search {
-    background-color: transparent;
+  background-color: transparent;
 
-    border-radius: 0;
+  border-radius: 0;
 }
 
 textarea {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border: none;
-    border-radius: 24px;
+  border: none;
+  border-radius: 24px;
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 textarea:focus, textarea:hover {
-    background-color: rgba(0, 89, 255, 0.5);
+  background-color: rgba(0, 89, 255, 0.5);
 }
 
 img, video {
-    border-radius: 24px;
+  border-radius: 24px;
 }
 
 .bottom {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .top {
-    position: absolute;
-    top: 0;
-    margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  margin-top: 1rem;
 }
 
 .left {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0, -25%);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -25%);
 
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .right {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0, -25%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -25%);
 
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .card {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-flat {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 7.5px;
+  border-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-flat-top {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-top-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-flat-bottom {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
-    border-bottom-left-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-flat-left {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-flat-right {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
-    border-top-right-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-error {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-error-flat {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 7.5px;
+  border-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-error-flat-top {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-top-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-error-flat-bottom {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
-    border-bottom-left-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-error-flat-left {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-error-flat-right {
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-right-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle-flat {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 7.5px;
+  border-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle-flat-top {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-top-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle-flat-bottom {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
-    border-bottom-left-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle-flat-left {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle-flat-right {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
-    border-top-right-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle, .card-subtle-flat .search-box-subtle, .card-subtle-flat .button-subtle, .card-subtle-flat-bottom .search-box-subtle, .card-subtle-flat-bottom .button-subtle, .card-subtle-flat-bottom .input-subtle, .card-subtle-flat-left .search-box-subtle, .card-subtle-flat-left .button-subtle, .card-subtle-flat-left .input-subtle, .card-subtle-flat-right .button-subtle, .card-subtle-flat-right .input-subtle, .card-subtle-flat-right .search-box-subtle,  .card-subtle-flat-top .button-subtle, .card-subtle-flat-top .input-subtle, .card-subtle-flat-top .search-box-subtle, .snackbar .button-subtle, .snackbar .input-subtle, .snackbar .search-box-subtle {
-    border: 1px solid rgb(100, 100, 100);
+  border: 1px solid rgb(100, 100, 100);
 }
 
 .card-success {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-success-flat {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 7.5px;
+  border-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-success-flat-top {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-top-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-success-flat-bottom {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-bottom-left-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-success-flat-left {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-success-flat-right {
-    background-color: rgba(0, 255, 0, 0.25);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-right-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-warning {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-warning-flat {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 
-    border-radius: 7.5px;
+  border-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-warning-flat-top {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-top-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-warning-flat-bottom {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-bottom-left-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-warning-flat-left {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-left-radius: 7.5px;
-    border-bottom-left-radius: 7.5px;
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-warning-flat-right {
-    background-color: rgba(255, 255, 0, 0.25);
+  background-color: rgba(255, 255, 0, 0.25);
 
-    border-radius: 24px;
-    border-top-right-radius: 7.5px;
-    border-bottom-right-radius: 7.5px;
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 .card-interactive:hover {
-    background-color: rgba(0, 89, 255, 0.5);
-    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  background-color: rgba(0, 89, 255, 0.5);
+  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-error-interactive:hover {
-    background-color: rgba(255, 0, 0, 0.5);
-    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-success-interactive:hover {
-    background-color: rgba(0, 255, 0, 0.5);
-    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  background-color: rgba(0, 255, 0, 0.5);
+  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .card-warning-interactive:hover {
-    background-color: rgba(255, 255, 0, 0.5);
-    cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  background-color: rgba(255, 255, 0, 0.5);
+  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
 }
 
 .column {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .column-flat {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .divider {
-    background-color: rgb(100, 100, 100);
+  background-color: rgb(100, 100, 100);
 
-    width: 40vw;
-    height: 0.05rem;
+  width: 40vw;
+  height: 0.05rem;
 }
 
 .material-symbols-rounded {
-    user-select: none;
+  user-select: none;
 }
 
 .navbar {
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    background-color: rgba(0, 89, 255, 0.25);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    width: 100%;
+  width: 100%;
 }
 
 .navbar-error {
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    background-color: rgba(255, 0, 0, 0.25);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    width: 100%;
+  width: 100%;
 }
 
 .navbar-success {
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    background-color: rgba(0, 255, 0, 0.25);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background-color: rgba(0, 255, 0, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    width: 100%;
+  width: 100%;
 }
 
 .outline-none {
-    outline: none;
+  outline: none;
 }
 
 .progress {
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24rem;
+  border-radius: 24rem;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    width: 50vw;
-    height: 0.5rem;
+  width: 50vw;
+  height: 0.5rem;
 }
 
 .progress-bar-determinate {
-    animation: 5s progress-determinate linear;
+  animation: 5s progress-determinate linear;
 
-    background-color: rgba(0, 89, 255, 0.5);
+  background-color: rgba(0, 89, 255, 0.5);
 
-    width: 50vw;
-    height: 0.5rem;
+  width: 50vw;
+  height: 0.5rem;
 }
 
 .row {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .row-flat {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .search-box {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .search-box *, .search-box-error *, .search-box-subtle * {
-    outline: none;
+  outline: none;
 }
 
 .search-box:hover, .search-box:focus-within {
-    background-color: rgba(0, 89, 255, 0.5);
+  background-color: rgba(0, 89, 255, 0.5);
 }
 
 .search-box-error {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(255, 0, 0, 0.25);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .search-box-error:hover, .search-box-error:focus-within {
-    background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.5);
 }
 
 .search-box-subtle {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .search-box-subtle:hover, .search-box-subtle:focus-within {
-    background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(50, 50, 50, 1);
 }
 
 .snackbar {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 
-    background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(25, 25, 25, 1);
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .toolbar {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  justify-content: center;
 
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 24px;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 24px;
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .toolbar-warning {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  justify-content: center;
 
-    border: 1px solid rgba(255, 255, 0, 0.5);
-    border-radius: 24px;
+  border: 1px solid rgba(255, 255, 0, 0.5);
+  border-radius: 24px;
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .toolbar-divider {
-    background-color: rgb(100, 100, 100);
+  background-color: rgb(100, 100, 100);
 
-    width: 1px;
-    height: 3.5rem;
+  width: 1px;
+  height: 3.5rem;
 }
 
 .toolbar-divider-horizontal {
-    background-color: rgb(100, 100, 100);
+  background-color: rgb(100, 100, 100);
 
-    height: 1px;
-    width: 3.5rem;
+  height: 1px;
+  width: 3.5rem;
 
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .absolute-centre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .navbar-column {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
 
-    width: 100%;
+  width: 100%;
 }
 
 .hole {
-    background-color: black;
+  background-color: black;
 
-    border-radius: 24px;
+  border-radius: 24px;
 
-    padding: 2.5rem;
+  padding: 2.5rem;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type=number] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 
 .tooltip {
-    background-color: rgba(0, 89, 255, 0.25);
+  background-color: rgba(0, 89, 255, 0.25);
 
-    border-radius: 100vw;
+  border-radius: 100vw;
 
-    padding-left: 1rem;
-    padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

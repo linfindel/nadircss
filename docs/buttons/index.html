@@ -1,159 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NadirCSS</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NadirCSS</title>
 
-    <link rel="stylesheet" href="../../nadir.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="../../nadir.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <style>
-        .column-flat > * {
-            width: 100%;
-        }
-    </style>
+  <style>
+    .column-flat > * {
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar-column">
-        <div class="navbar">
-            <h1>NadirCSS</h1>
-        </div>
+  <div class="navbar-column">
+    <div class="navbar">
+      <h1>NadirCSS</h1>
+    </div>
 
-        <button onclick="location.href = '../'">
-            <span class="material-symbols-rounded">arrow_back</span>
-            Back
+    <button onclick="location.href = '../'">
+      <span class="material-symbols-rounded">arrow_back</span>
+      Back
+    </button>
+  </div>
+
+  <div class="column-flat">
+    <div class="card-flat-bottom text-center">
+      <h1>Buttons</h1>
+      <p>Buttons let people take action and make choices with one tap</p>
+    </div>
+
+    <div class="card-flat column text-center">
+      <div class="text-center">
+        <h2>Default button</h2>
+        <p>The initial state of all buttons</p>
+      </div>
+
+      <div id="default-button" class="row hole">
+        <button>
+          <span class="material-symbols-rounded">add_circle</span>
+          Create new
         </button>
+
+        <button>
+          <span class="material-symbols-rounded">upload</span>
+          Upload
+        </button>
+      </div>
+
+      <button id="default-button-trigger" onclick="copy('default-button')">
+        <span id="default-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
+        <span id="default-button-trigger-text">Copy code</span>
+      </button>
     </div>
 
-    <div class="column-flat">
-        <div class="card-flat-bottom text-center">
-            <h1>Buttons</h1>
-            <p>Buttons let people take action and make choices with one tap</p>
-        </div>
+    <div class="card-flat column text-center">
+      <div class="text-center">
+        <h2>Error button</h2>
+        <p>Used when an action has been unsuccessful or is unavailable</p>
+      </div>
 
-        <div class="card-flat column text-center">
-            <div class="text-center">
-                <h2>Default button</h2>
-                <p>The initial state of all buttons</p>
-            </div>
+      <div id="error-button" class="row hole">
+        <button class="button-error">
+          <span class="material-symbols-rounded">add_circle</span>
+          Create new
+        </button>
 
-            <div id="default-button" class="row hole">
-                <button>
-                    <span class="material-symbols-rounded">add_circle</span>
-                    Create new
-                </button>
+        <button class="button-error">
+          <span class="material-symbols-rounded">upload</span>
+          Upload
+        </button>
+      </div>
 
-                <button>
-                    <span class="material-symbols-rounded">upload</span>
-                    Upload
-                </button>
-            </div>
-
-            <button id="default-button-trigger" onclick="copy('default-button')">
-                <span id="default-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
-                <span id="default-button-trigger-text">Copy code</span>
-            </button>
-        </div>
-
-        <div class="card-flat column text-center">
-            <div class="text-center">
-                <h2>Error button</h2>
-                <p>Used when an action has been unsuccessful or is unavailable</p>
-            </div>
-
-            <div id="error-button" class="row hole">
-                <button class="button-error">
-                    <span class="material-symbols-rounded">add_circle</span>
-                    Create new
-                </button>
-
-                <button class="button-error">
-                    <span class="material-symbols-rounded">upload</span>
-                    Upload
-                </button>
-            </div>
-
-            <button id="error-button-trigger" onclick="copy('error-button')">
-                <span id="error-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
-                <span id="error-button-trigger-text">Copy code</span>
-            </button>
-        </div>
-
-        <div class="card-flat column text-center">
-            <div class="text-center">
-                <h2>Subtle button</h2>
-                <p>Used when an action is less significant or temporarily unavailable</p>
-            </div>
-
-            <div id="subtle-button" class="row hole">
-                <button class="button-subtle">
-                    <span class="material-symbols-rounded">add_circle</span>
-                    Create new
-                </button>
-
-                <button class="button-subtle">
-                    <span class="material-symbols-rounded">upload</span>
-                    Upload
-                </button>
-            </div>
-
-            <button id="subtle-button-trigger" onclick="copy('subtle-button')">
-                <span id="subtle-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
-                <span id="subtle-button-trigger-text">Copy code</span>
-            </button>
-        </div>
-
-        <div class="card-flat column text-center">
-            <div class="text-center">
-                <h2>Success button</h2>
-                <p>Used when an action has been successful</p>
-            </div>
-
-            <div id="success-button" class="row hole">
-                <button class="button-success">
-                    <span class="material-symbols-rounded">add_circle</span>
-                    Create new
-                </button>
-
-                <button class="button-success">
-                    <span class="material-symbols-rounded">upload</span>
-                    Upload
-                </button>
-            </div>
-
-            <button id="success-button-trigger" onclick="copy('success-button')">
-                <span id="success-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
-                <span id="success-button-trigger-text">Copy code</span>
-            </button>
-        </div>
-
-        <div class="card-flat-top column text-center">
-            <div class="text-center">
-                <h2>Warning button</h2>
-                <p>Used when an action has potential consequences or has an uncertain outcome</p>
-            </div>
-
-            <div id="warning-button" class="row hole">
-                <button class="button-warning">
-                    <span class="material-symbols-rounded">add_circle</span>
-                    Create new
-                </button>
-
-                <button class="button-warning">
-                    <span class="material-symbols-rounded">upload</span>
-                    Upload
-                </button>
-            </div>
-
-            <button id="warning-button-trigger" onclick="copy('warning-button')">
-                <span id="warning-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
-                <span id="warning-button-trigger-text">Copy code</span>
-            </button>
-        </div>
+      <button id="error-button-trigger" onclick="copy('error-button')">
+        <span id="error-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
+        <span id="error-button-trigger-text">Copy code</span>
+      </button>
     </div>
 
-    <script src="../copy.js"></script>
+    <div class="card-flat column text-center">
+      <div class="text-center">
+        <h2>Subtle button</h2>
+        <p>Used when an action is less significant or temporarily unavailable</p>
+      </div>
+
+      <div id="subtle-button" class="row hole">
+        <button class="button-subtle">
+          <span class="material-symbols-rounded">add_circle</span>
+          Create new
+        </button>
+
+        <button class="button-subtle">
+          <span class="material-symbols-rounded">upload</span>
+          Upload
+        </button>
+      </div>
+
+      <button id="subtle-button-trigger" onclick="copy('subtle-button')">
+        <span id="subtle-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
+        <span id="subtle-button-trigger-text">Copy code</span>
+      </button>
+    </div>
+
+    <div class="card-flat column text-center">
+      <div class="text-center">
+        <h2>Success button</h2>
+        <p>Used when an action has been successful</p>
+      </div>
+
+      <div id="success-button" class="row hole">
+        <button class="button-success">
+          <span class="material-symbols-rounded">add_circle</span>
+          Create new
+        </button>
+
+        <button class="button-success">
+          <span class="material-symbols-rounded">upload</span>
+          Upload
+        </button>
+      </div>
+
+      <button id="success-button-trigger" onclick="copy('success-button')">
+        <span id="success-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
+        <span id="success-button-trigger-text">Copy code</span>
+      </button>
+    </div>
+
+    <div class="card-flat-top column text-center">
+      <div class="text-center">
+        <h2>Warning button</h2>
+        <p>Used when an action has potential consequences or has an uncertain outcome</p>
+      </div>
+
+      <div id="warning-button" class="row hole">
+        <button class="button-warning">
+          <span class="material-symbols-rounded">add_circle</span>
+          Create new
+        </button>
+
+        <button class="button-warning">
+          <span class="material-symbols-rounded">upload</span>
+          Upload
+        </button>
+      </div>
+
+      <button id="warning-button-trigger" onclick="copy('warning-button')">
+        <span id="warning-button-trigger-icon" class="material-symbols-rounded">content_copy</span>
+        <span id="warning-button-trigger-text">Copy code</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="../copy.js"></script>
 </body>
 </html>
