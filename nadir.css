@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
 @keyframes progress-determinate {
   0% {
@@ -28,7 +28,7 @@
   animation-fill-mode: forwards;
 
   color: white;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-weight: 200;
   text-decoration: none;
 
@@ -61,7 +61,7 @@ button {
 }
 
 button:not(:disabled) {
-  cursor: url('cursors/link-select.cur'), auto;
+  cursor: url(cursors/link-select.cur), auto;
 }
 
 button:not(.button-error, .button-subtle, .button-success, .button-warning):hover {
@@ -119,38 +119,38 @@ code {
 }
 
 html {
-  cursor: url("cursors/normal-select.cur"), auto;
+  cursor: url(cursors/normal-select.cur), auto;
 }
 
 input {
   outline: none;
 }
 
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success),
-input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success) {
+input[type='text']:not(.input-error, .input-search, .input-subtle, .input-success),
+input[type='number']:not(.input-error, .input-search, .input-subtle, .input-success) {
   background-color: rgba(0, 89, 255, 0.25);
 }
 
-input[type="text"],
-input[type="number"] {
+input[type='text'],
+input[type='number'] {
   border: none;
 
-  cursor: url('cursors/text-select.cur'), auto;
+  cursor: url(cursors/text-select.cur), auto;
 
   font-weight: 300;
 
   padding: 1rem;
 }
 
-input[type="text"]:not(.input-search),
-input[type="number"] {
+input[type='text']:not(.input-search),
+input[type='number'] {
   border-radius: 24px;
 }
 
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover,
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus,
-input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):hover,
-input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
+input[type='text']:not(.input-error, .input-search, .input-subtle, .input-success):hover,
+input[type='text']:not(.input-error, .input-search, .input-subtle, .input-success):focus,
+input[type='number']:not(.input-error, .input-search, .input-subtle, .input-success):hover,
+input[type='number']:not(.input-error, .input-search, .input-subtle, .input-success):focus {
   background-color: rgba(0, 89, 255, 0.5);
 }
 
@@ -545,22 +545,22 @@ video {
 
 .card-interactive:hover {
   background-color: rgba(0, 89, 255, 0.5);
-  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
 }
 
 .card-error-interactive:hover {
   background-color: rgba(255, 0, 0, 0.5);
-  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
 }
 
 .card-success-interactive:hover {
   background-color: rgba(0, 255, 0, 0.5);
-  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
 }
 
 .card-warning-interactive:hover {
   background-color: rgba(255, 255, 0, 0.5);
-  cursor: url('https://linfindel.github.io/nadircss/cursors/link-select.cur'), auto;
+  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
 }
 
 .column {
