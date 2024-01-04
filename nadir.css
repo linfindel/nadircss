@@ -126,11 +126,13 @@ input {
   outline: none;
 }
 
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success), input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success) {
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success),
+input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success) {
   background-color: rgba(0, 89, 255, 0.25);
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"],
+input[type="number"] {
   border: none;
 
   cursor: url('cursors/text-select.cur'), auto;
@@ -140,11 +142,15 @@ input[type="text"], input[type="number"] {
   padding: 1rem;
 }
 
-input[type="text"]:not(.input-search), input[type="number"] {
+input[type="text"]:not(.input-search),
+input[type="number"] {
   border-radius: 24px;
 }
 
-input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus, input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):hover, input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):hover,
+input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-success):focus,
+input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):hover,
+input[type="number"]:not(.input-error, .input-search, .input-subtle, .input-success):focus {
   background-color: rgba(0, 89, 255, 0.5);
 }
 
@@ -152,7 +158,8 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
   background-color: rgba(255, 0, 0, 0.25);
 }
 
-.input-error:hover, .input-error:focus {
+.input-error:hover,
+.input-error:focus {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -160,7 +167,8 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
   background-color: rgba(25, 25, 25, 1);
 }
 
-.input-subtle:hover, .input-subtle:focus {
+.input-subtle:hover,
+.input-subtle:focus {
   background-color: rgba(50, 50, 50, 1);
 }
 
@@ -172,7 +180,8 @@ input[type="text"]:not(.input-error, .input-search, .input-subtle, .input-succes
   color: rgb(25, 25, 25);
 }
 
-.input-success:hover, .input-success:focus {
+.input-success:hover,
+.input-success:focus {
   background-color: rgba(0, 255, 0, 0.5);
 }
 
@@ -191,11 +200,13 @@ textarea {
   padding: 1rem;
 }
 
-textarea:focus, textarea:hover {
+textarea:focus,
+textarea:hover {
   background-color: rgba(0, 89, 255, 0.5);
 }
 
-img, video {
+img,
+video {
   border-radius: 24px;
 }
 
@@ -397,7 +408,26 @@ img, video {
   padding: 2.5rem;
 }
 
-.card-subtle .button-subtle, .card-subtle .input-subtle, .card-subtle .search-box-subtle, .card-subtle-flat .search-box-subtle, .card-subtle-flat .button-subtle, .card-subtle-flat-bottom .search-box-subtle, .card-subtle-flat-bottom .button-subtle, .card-subtle-flat-bottom .input-subtle, .card-subtle-flat-left .search-box-subtle, .card-subtle-flat-left .button-subtle, .card-subtle-flat-left .input-subtle, .card-subtle-flat-right .button-subtle, .card-subtle-flat-right .input-subtle, .card-subtle-flat-right .search-box-subtle,  .card-subtle-flat-top .button-subtle, .card-subtle-flat-top .input-subtle, .card-subtle-flat-top .search-box-subtle, .snackbar .button-subtle, .snackbar .input-subtle, .snackbar .search-box-subtle {
+.card-subtle .button-subtle,
+.card-subtle .input-subtle,
+.card-subtle .search-box-subtle,
+.card-subtle-flat .search-box-subtle,
+.card-subtle-flat .button-subtle,
+.card-subtle-flat-bottom .search-box-subtle,
+.card-subtle-flat-bottom .button-subtle,
+.card-subtle-flat-bottom .input-subtle,
+.card-subtle-flat-left .search-box-subtle,
+.card-subtle-flat-left .button-subtle,
+.card-subtle-flat-left .input-subtle,
+.card-subtle-flat-right .button-subtle,
+.card-subtle-flat-right .input-subtle,
+.card-subtle-flat-right .search-box-subtle,
+.card-subtle-flat-top .button-subtle,
+.card-subtle-flat-top .input-subtle,
+.card-subtle-flat-top .search-box-subtle,
+.snackbar .button-subtle,
+.snackbar .input-subtle,
+.snackbar .search-box-subtle {
   border: 1px solid rgb(100, 100, 100);
 }
 
@@ -660,11 +690,14 @@ img, video {
   padding-left: 1rem;
 }
 
-.search-box *, .search-box-error *, .search-box-subtle * {
+.search-box *,
+.search-box-error *,
+.search-box-subtle * {
   outline: none;
 }
 
-.search-box:hover, .search-box:focus-within {
+.search-box:hover,
+.search-box:focus-within {
   background-color: rgba(0, 89, 255, 0.5);
 }
 
@@ -681,7 +714,8 @@ img, video {
   padding-left: 1rem;
 }
 
-.search-box-error:hover, .search-box-error:focus-within {
+.search-box-error:hover, 
+.search-box-error:focus-within {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -698,7 +732,8 @@ img, video {
   padding-left: 1rem;
 }
 
-.search-box-subtle:hover, .search-box-subtle:focus-within {
+.search-box-subtle:hover,
+.search-box-subtle:focus-within {
   background-color: rgba(50, 50, 50, 1);
 }
 
@@ -787,7 +822,8 @@ img, video {
   padding: 2.5rem;
 }
 
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -795,7 +831,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 
 .tooltip {
   background-color: rgba(0, 89, 255, 0.25);
