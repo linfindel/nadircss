@@ -296,6 +296,42 @@ video {
   padding: 2.5rem;
 }
 
+.card-flat-top-left {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-flat-top-right {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-flat-bottom-left {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-flat-bottom-right {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-error {
   background-color: rgba(255, 0, 0, 0.25);
 
@@ -347,6 +383,42 @@ video {
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-error-flat-top-left {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-error-flat-top-right {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-error-flat-bottom-left {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-error-flat-bottom-right {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
   border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
@@ -408,6 +480,42 @@ video {
   padding: 2.5rem;
 }
 
+.card-subtle-flat-top-left {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-subtle-flat-top-right {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-subtle-flat-bottom-left {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-subtle-flat-bottom-right {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-subtle .button-subtle,
 .card-subtle .input-subtle,
 .card-subtle .search-box-subtle,
@@ -425,6 +533,18 @@ video {
 .card-subtle-flat-top .button-subtle,
 .card-subtle-flat-top .input-subtle,
 .card-subtle-flat-top .search-box-subtle,
+.card-subtle-flat-top-left .button-subtle,
+.card-subtle-flat-top-left .input-subtle,
+.card-subtle-flat-top-left .search-box-subtle,
+.card-subtle-flat-top-right .button-subtle,
+.card-subtle-flat-top-right .input-subtle,
+.card-subtle-flat-top-right .search-box-subtle,
+.card-subtle-flat-bottom-left .button-subtle,
+.card-subtle-flat-bottom-left .input-subtle,
+.card-subtle-flat-bottom-left .search-box-subtle,
+.card-subtle-flat-bottom-right .button-subtle,
+.card-subtle-flat-bottom-right .input-subtle,
+.card-subtle-flat-bottom-right .search-box-subtle,
 .snackbar .button-subtle,
 .snackbar .input-subtle,
 .snackbar .search-box-subtle {
@@ -487,6 +607,42 @@ video {
   padding: 2.5rem;
 }
 
+.card-success-flat-top-left {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-success-flat-top-right {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-success-flat-bottom-left {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-success-flat-bottom-right {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-warning {
   background-color: rgba(255, 255, 0, 0.25);
 
@@ -538,6 +694,42 @@ video {
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-warning-flat-top-left {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-warning-flat-top-right {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-warning-flat-bottom-left {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-warning-flat-bottom-right {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
   border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
