@@ -318,7 +318,7 @@ video {
   background-color: rgba(0, 89, 255, 0.25);
 
   border-radius: 24px;
-  border-bottom-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
   padding: 2.5rem;
 }
