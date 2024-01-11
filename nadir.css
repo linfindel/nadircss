@@ -305,11 +305,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-flat-top-left-alt {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-flat-top-right {
   background-color: rgba(0, 89, 255, 0.25);
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-flat-top-right-alt {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -323,11 +345,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-flat-bottom-left-alt {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-top-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-flat-bottom-right {
   background-color: rgba(0, 89, 255, 0.25);
 
   border-radius: 24px;
   border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-flat-bottom-right-alt {
+  background-color: rgba(0, 89, 255, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -397,11 +441,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-error-flat-top-left-alt {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-error-flat-top-right {
   background-color: rgba(255, 0, 0, 0.25);
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-error-flat-top-right-alt {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -415,11 +481,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-error-flat-bottom-left-alt {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-error-flat-bottom-right {
   background-color: rgba(255, 0, 0, 0.25);
 
   border-radius: 24px;
   border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-error-flat-bottom-right-alt {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -489,11 +577,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-subtle-flat-top-left-alt {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-subtle-flat-top-right {
   background-color: rgb(25, 25, 25);
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-subtle-flat-top-right-alt {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -507,11 +617,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-subtle-flat-bottom-left-alt {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-subtle-flat-bottom-right {
   background-color: rgb(25, 25, 25);
 
   border-radius: 24px;
   border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-subtle-flat-bottom-right-alt {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -536,15 +668,27 @@ video {
 .card-subtle-flat-top-left .button-subtle,
 .card-subtle-flat-top-left .input-subtle,
 .card-subtle-flat-top-left .search-box-subtle,
+.card-subtle-flat-top-left-alt .button-subtle,
+.card-subtle-flat-top-left-alt .input-subtle,
+.card-subtle-flat-top-left-alt .search-box-subtle,
 .card-subtle-flat-top-right .button-subtle,
 .card-subtle-flat-top-right .input-subtle,
 .card-subtle-flat-top-right .search-box-subtle,
+.card-subtle-flat-top-right-alt .button-subtle,
+.card-subtle-flat-top-right-alt .input-subtle,
+.card-subtle-flat-top-right-alt .search-box-subtle,
 .card-subtle-flat-bottom-left .button-subtle,
 .card-subtle-flat-bottom-left .input-subtle,
 .card-subtle-flat-bottom-left .search-box-subtle,
+.card-subtle-flat-bottom-left-alt.button-subtle,
+.card-subtle-flat-bottom-left-alt.input-subtle,
+.card-subtle-flat-bottom-left-alt.search-box-subtle,
 .card-subtle-flat-bottom-right .button-subtle,
 .card-subtle-flat-bottom-right .input-subtle,
 .card-subtle-flat-bottom-right .search-box-subtle,
+.card-subtle-flat-bottom-right-alt .button-subtle,
+.card-subtle-flat-bottom-right-alt .input-subtle,
+.card-subtle-flat-bottom-right-alt .search-box-subtle,
 .snackbar .button-subtle,
 .snackbar .input-subtle,
 .snackbar .search-box-subtle {
@@ -616,11 +760,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-success-flat-top-left-alt {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-success-flat-top-right {
   background-color: rgba(0, 255, 0, 0.25);
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-success-flat-top-right-alt {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -634,11 +800,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-success-flat-bottom-left-alt {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-success-flat-bottom-right {
   background-color: rgba(0, 255, 0, 0.25);
 
   border-radius: 24px;
   border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-success-flat-bottom-right-alt {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -708,11 +896,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-warning-flat-top-left-alt {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-warning-flat-top-right {
   background-color: rgba(255, 255, 0, 0.25);
 
   border-radius: 24px;
   border-top-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-warning-flat-top-right-alt {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
 
   padding: 2.5rem;
 }
@@ -726,11 +936,33 @@ video {
   padding: 2.5rem;
 }
 
+.card-warning-flat-bottom-left-alt {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
 .card-warning-flat-bottom-right {
   background-color: rgba(255, 255, 0, 0.25);
 
   border-radius: 24px;
   border-bottom-right-radius: 7.5px;
+
+  padding: 2.5rem;
+}
+
+.card-warning-flat-bottom-right-alt {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24px;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+  border-bottom-left-radius: 7.5px;
 
   padding: 2.5rem;
 }
