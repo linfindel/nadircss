@@ -120,7 +120,7 @@ button:not(
   .card-warning-flat-top-left,
   .card-warning-flat-top-left-alt,
   .card-warning-flat-top-right,
-  .card-warning-flat-top-right-alt,):hover {
+  .card-warning-flat-top-right-alt):hover {
   background-color: rgba(0, 89, 255, 0.5);
 }
 
