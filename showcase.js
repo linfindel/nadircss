@@ -350,24 +350,44 @@ const exhibits = [
   </div>`,
 
   // Progress bars
-  `<div class="progress" style="background-color: rgba(0, 89, 255, 0.25); width: 100%;">
-    <div class="progress" style="background-color: rgb(0, 89, 255); width: 50%;"></div>
+  `<div class="progress">
+    <div class="progress-bar-determinate"></div>
   </div>`,
 
-  `<div class="progress" style="background-color: rgba(255, 0, 0, 0.25); width: 100%;">
-    <div class="progress" style="background-color: rgb(255, 0, 0); width: 50%;"></div>
+  `<div class="progress">
+    <div class="progress-bar-indeterminate"></div>
   </div>`,
 
-  `<div class="progress" style="background-color: rgb(25, 25, 25); width: 100%;">
-    <div class="progress" style="background-color: rgb(150, 150, 150); width: 50%;"></div>
+  `<div class="progress-error">
+    <div class="progress-bar-determinate-error"></div>
   </div>`,
 
-  `<div class="progress" style="background-color: rgba(0, 255, 0, 0.25); width: 100%;">
-    <div class="progress" style="background-color: rgb(0, 255, 0); width: 50%;"></div>
+  `<div class="progress-error">
+    <div class="progress-bar-indeterminate-error"></div>
   </div>`,
 
-  `<div class="progress" style="background-color: rgba(255, 255, 0, 0.25); width: 100%;">
-    <div class="progress" style="background-color: rgb(255, 255, 0); width: 50%;"></div>
+  `<div class="progress-subtle">
+    <div class="progress-bar-determinate-subtle"></div>
+  </div>`,
+
+  `<div class="progress-subtle">
+    <div class="progress-bar-indeterminate-subtle"></div>
+  </div>`,
+
+  `<div class="progress-success">
+    <div class="progress-bar-determinate-success"></div>
+  </div>`,
+
+  `<div class="progress-success">
+    <div class="progress-bar-indeterminate-success"></div>
+  </div>`,
+
+  `<div class="progress-warning">
+    <div class="progress-bar-determinate-warning"></div>
+  </div>`,
+
+  `<div class="progress-warning">
+    <div class="progress-bar-indeterminate-warning"></div>
   </div>`,
 
   // Search fields

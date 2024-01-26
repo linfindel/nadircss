@@ -10,6 +10,17 @@
   }
 }
 
+@keyframes progress-indeterminate {
+  0% {
+    transform: translateX(-125%);
+    width: 0;
+  }
+
+  100% {
+    transform: translateX(125%);
+  }
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -1120,22 +1131,167 @@ video {
 }
 
 .progress {
-  background-color: rgba(25, 25, 25, 1);
+  background-color: rgba(0, 89, 255, 0.25);
 
   border-radius: 24rem;
 
   overflow: hidden;
 
-  width: 50vw;
+  width: 100%;
   height: 0.5rem;
 }
 
 .progress-bar-determinate {
-  animation: 5s progress-determinate linear;
+  animation: 5s progress-determinate linear infinite;
 
-  background-color: rgba(0, 89, 255, 0.5);
+  background-color: rgb(0, 89, 255);
 
-  width: 50vw;
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-indeterminate {
+  animation: 2.5s progress-indeterminate linear infinite;
+
+  background-color: rgb(0, 89, 255);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-error {
+  background-color: rgba(255, 0, 0, 0.25);
+
+  border-radius: 24rem;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-determinate-error {
+  animation: 5s progress-determinate linear infinite;
+
+  background-color: rgb(255, 0, 0);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-indeterminate-error {
+  animation: 2.5s progress-indeterminate linear infinite;
+
+  background-color: rgb(255, 0, 0);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-subtle {
+  background-color: rgb(25, 25, 25);
+
+  border-radius: 24rem;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-determinate-subtle {
+  animation: 5s progress-determinate linear infinite;
+
+  background-color: rgb(100, 100, 100);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-indeterminate-subtle {
+  animation: 2.5s progress-indeterminate linear infinite;
+
+  background-color: rgb(100, 100, 100);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-success {
+  background-color: rgba(0, 255, 0, 0.25);
+
+  border-radius: 24rem;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-determinate-success {
+  animation: 5s progress-determinate linear infinite;
+
+  background-color: rgb(0, 255, 0);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-indeterminate-success {
+  animation: 2.5s progress-indeterminate linear infinite;
+
+  background-color: rgb(0, 255, 0);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-warning {
+  background-color: rgba(255, 255, 0, 0.25);
+
+  border-radius: 24rem;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-determinate-warning {
+  animation: 5s progress-determinate linear infinite;
+
+  background-color: rgb(255, 255, 0);
+
+  border-radius: 24rem;
+
+  width: 100%;
+  height: 0.5rem;
+}
+
+.progress-bar-indeterminate-warning {
+  animation: 2.5s progress-indeterminate linear infinite;
+
+  background-color: rgb(255, 255, 0);
+
+  border-radius: 24rem;
+
+  width: 100%;
   height: 0.5rem;
 }
 
