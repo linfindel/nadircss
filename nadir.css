@@ -1087,7 +1087,7 @@ video {
   margin-block-end: 0.67em;
 }
 
-.navbar, nav {
+nav {
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -1102,7 +1102,7 @@ video {
   width: 100%;
 }
 
-.navbar-error, nav.error {
+nav.error {
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -1117,7 +1117,7 @@ video {
   width: 100%;
 }
 
-.navbar-success, nav.success {
+nav.success {
   align-content: center;
   display: flex;
   flex-direction: row;
