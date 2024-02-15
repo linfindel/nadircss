@@ -337,17 +337,17 @@ const exhibits = [
   </div>`,
 
   // Navbars
-  `<div style="width: 100%;" class="navbar">
+  `<nav style="width: 100%;">
     <h1>Navbar</h1>
-  </div>`,
+  </nav>`,
 
-  `<div style="width: 100%;" class="navbar-error">
+  `<nav style="width: 100%;" class="error">
     <h1>Navbar</h1>
-  </div>`,
+  </nav>`,
 
-  `<div style="width: 100%;" class="navbar-success">
+  `<nav style="width: 100%;" class="success">
     <h1>Navbar</h1>
-  </div>`,
+  </nav>`,
 
   // Progress bars
   `<div class="progress">
