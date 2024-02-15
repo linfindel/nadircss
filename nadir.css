@@ -1081,6 +1081,10 @@ video {
   user-select: none;
 }
 
+:-webkit-any(article, aside, nav, section) h1 {
+  font-size: initial;
+}
+
 .navbar, nav {
   align-content: center;
   display: flex;
