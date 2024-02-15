@@ -1081,8 +1081,8 @@ video {
   user-select: none;
 }
 
-:-webkit-any(article, aside, nav, section) h1 {
-  font-size: initial;
+:-webkit-any(nav) h1 {
+  font-size: 2em;
 }
 
 .navbar, nav {
