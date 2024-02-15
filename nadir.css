@@ -1081,7 +1081,7 @@ video {
   user-select: none;
 }
 
-.navbar {
+.navbar, nav {
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -1096,7 +1096,7 @@ video {
   width: 100%;
 }
 
-.navbar-error {
+.navbar-error, nav.error {
   align-content: center;
   display: flex;
   flex-direction: row;
@@ -1111,7 +1111,7 @@ video {
   width: 100%;
 }
 
-.navbar-success {
+.navbar-success, nav.success {
   align-content: center;
   display: flex;
   flex-direction: row;
