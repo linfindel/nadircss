@@ -1093,8 +1093,6 @@ nav {
   flex-direction: row;
   justify-content: space-around;
 
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
   background-color: rgba(0, 89, 255, 0.25);
 
   border-radius: 24px;
