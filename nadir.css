@@ -1415,7 +1415,7 @@ nav.success {
   margin: 1rem;
 }
 
-.absolute-centre {
+.absolute-centre, .absolute-center {
   position: absolute;
   top: 50%;
   left: 50%;
