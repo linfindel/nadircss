@@ -7,7 +7,7 @@
   font-family: 'Material Symbols Rounded';
   font-style: normal;
   font-weight: 400;
-  src: url(/fonts/MaterialSymbolsRounded.woff2);
+  src: url(fonts/MaterialSymbolsRounded.woff2);
 }
 
 @keyframes progress-determinate {
