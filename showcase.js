@@ -4,27 +4,27 @@ const exhibits = [
   //Buttons
 
   `<button>
-    <span class="material-symbols-rounded">add_circle</span>
+    <span translate="no" class="material-symbols-rounded">add_circle</span>
     Button
   </button>`,
 
   `<button class="button-error">
-    <span class="material-symbols-rounded">add_circle</span>
+    <span translate="no" class="material-symbols-rounded">add_circle</span>
     Button
   </button>`,
 
   `<button class="button-subtle">
-    <span class="material-symbols-rounded">add_circle</span>
+    <span translate="no" class="material-symbols-rounded">add_circle</span>
     Button
   </button>`,
 
   `<button class="button-success">
-    <span class="material-symbols-rounded">add_circle</span>
+    <span translate="no" class="material-symbols-rounded">add_circle</span>
     Button
   </button>`,
 
   `<button class="button-warning">
-    <span class="material-symbols-rounded">add_circle</span>
+    <span translate="no" class="material-symbols-rounded">add_circle</span>
     Button
   </button>`,
 
@@ -392,17 +392,17 @@ const exhibits = [
 
   // Search fields
   `<div class="search-box">
-    <span class="material-symbols-rounded">search</span>
+    <span translate="no" class="material-symbols-rounded">search</span>
     <input type="text" class="input-search" placeholder="Search">
   </div>`,
 
   `<div class="search-box-error">
-    <span class="material-symbols-rounded">search</span>
+    <span translate="no" class="material-symbols-rounded">search</span>
     <input type="text" class="input-search" placeholder="Search">
   </div>`,
 
   `<div class="search-box-subtle">
-    <span class="material-symbols-rounded">search</span>
+    <span translate="no" class="material-symbols-rounded">search</span>
     <input type="text" class="input-search" placeholder="Search">
   </div>`,
 
@@ -411,7 +411,7 @@ const exhibits = [
     <h1>Snackbar</h1>
 
     <button class="button-subtle">
-      <span class="material-symbols-rounded">close</span>
+      <span translate="no" class="material-symbols-rounded">close</span>
     </button>
   </div>`,
 
