@@ -1,14 +1,4 @@
-@font-face {
-  font-family: "Noto Sans";
-  src: url("fonts/NotoSansVariable.ttf");
-}
-
-@font-face {
-  font-family: 'Material Symbols Rounded';
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/MaterialSymbolsRounded.woff2);
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @keyframes progress-determinate {
   0% {
@@ -1088,20 +1078,6 @@ video {
 }
 
 .material-symbols-rounded {
-  font-family: 'Material Symbols Rounded';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -moz-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale;
-
   user-select: none;
 }
 
