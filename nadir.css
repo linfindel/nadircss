@@ -82,7 +82,7 @@ button {
 }
 
 button:not(:disabled) {
-  cursor: url(cursors/link-select.cur), auto;
+  cursor: pointer;
 }
 
 button:not(
@@ -195,10 +195,6 @@ code {
   font-family: monospace;
 }
 
-html {
-  cursor: url(cursors/normal-select.cur), auto;
-}
-
 input {
   outline: none;
 }
@@ -211,8 +207,6 @@ input[type='number']:not(.input-error, .input-search, .input-subtle, .input-succ
 input[type='text'],
 input[type='number'] {
   border: none;
-
-  cursor: url(cursors/text-select.cur), auto;
 
   font-weight: 300;
 
@@ -1046,22 +1040,22 @@ video {
 
 .card-interactive:hover {
   background-color: rgba(0, 89, 255, 0.5);
-  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
+  cursor: pointer;
 }
 
 .card-error-interactive:hover {
   background-color: rgba(255, 0, 0, 0.5);
-  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
+  cursor: pointer;
 }
 
 .card-success-interactive:hover {
   background-color: rgba(0, 255, 0, 0.5);
-  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
+  cursor: pointer;
 }
 
 .card-warning-interactive:hover {
   background-color: rgba(255, 255, 0, 0.5);
-  cursor: url(https://linfindel.github.io/nadircss/cursors/link-select.cur), auto;
+  cursor: pointer;
 }
 
 .column {
